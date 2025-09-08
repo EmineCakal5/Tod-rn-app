@@ -12,22 +12,22 @@ const Stack = createNativeStackNavigator();
 function AppNavigator() {
   return (
 
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home"
+      screenOptions={{
+        headerStyle:{backgroundColor:'black'},
+        headerTintColor:'white',
+        }}>
         <Stack.Screen 
         name="Home" 
         component={HomeScreen}
         options={{
             title:'HomeScreen',
-            headerStyle:{backgroundColor:'black'},
-            headerTintColor:'white',
         }} />
         <Stack.Screen 
         name="Details" 
         component={DetailsScreen}
         options={{
             title:'Details',
-            headerStyle:{backgroundColor:'black'},
-            headerTintColor:'white',
 
         }} />
         <Stack.Screen 
@@ -35,8 +35,7 @@ function AppNavigator() {
         component={PasswordScreen}
         options={{
             title:'password',
-            headerStyle:{backgroundColor:'black'},
-            headerTintColor:'white',
+            
            
         }} />
         <Stack.Screen 
@@ -44,9 +43,7 @@ function AppNavigator() {
         component={MyTabs}
         options={{
             title:'homepage',
-            headerStyle:{backgroundColor:'black'},
-            headerTintColor:'white',
-        }
+                }
         } />
         
       </Stack.Navigator>
