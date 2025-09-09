@@ -5,7 +5,7 @@ function AccountScreen({navigation}) {
 
   return (
     <View style={{flex: 1, backgroundColor:'black' , alignItems:'center'}}>
-      <Text style={{fontSize: 24, color:"white", fontWeight:'normal', }}>HESABIM</Text>
+      <Text style={{fontSize: 24, color:"white", fontWeight:'bold', marginTop:-4}}>HESABIM</Text>
 
     </View>
   );

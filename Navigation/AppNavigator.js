@@ -5,6 +5,12 @@ import PasswordScreen from '../Screens/PasswordScreen';
 import PackageScreen from '../Screens/PackageScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MyTabs from './TabNavigator';
+import FilmScreen from '../Screens/FilmScreen';
+import DiziScreen from '../Screens/DiziScreen';
+import SporScreen from '../Screens/SporScreen';
+import CocukScreen from '../Screens/CocukScreen';
+import CanliTVScreen from '../Screens/CanliTVScreen';
+import HomePageScreen from '../Screens/HomePageScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,8 +18,8 @@ const Stack = createNativeStackNavigator();
 function AppNavigator() {
   return (
 
-      <Stack.Navigator initialRouteName="Home"
-      screenOptions={{
+        <Stack.Navigator initialRouteName="Home"
+        screenOptions={{
         headerStyle:{backgroundColor:'black'},
         headerTintColor:'white',
         }}>
@@ -28,24 +34,28 @@ function AppNavigator() {
         component={DetailsScreen}
         options={{
             title:'Details',
-
         }} />
         <Stack.Screen 
         name="Password" 
         component={PasswordScreen}
         options={{
             title:'password',
-            
-           
         }} />
         <Stack.Screen 
         name="MyTabs" 
         component={MyTabs}
         options={{
-            title:'homepage',
-                }
-        } />
-        
+        title:'homepage',
+                
+        }} />        
+        <Stack.Screen name="Package" component={PackageScreen} />
+        <Stack.Screen name="HomePage" component={HomePageScreen} />
+        <Stack.Screen name="FilmScreen" component={FilmScreen} />
+        <Stack.Screen name="DiziScreen" component={DiziScreen} />
+        <Stack.Screen name="SporScreen" component={SporScreen} /> 
+        <Stack.Screen name="CocukScreen" component={CocukScreen} />
+        <Stack.Screen name="CanliTVScreen" component={CanliTVScreen} />
+    
       </Stack.Navigator>
   );
 }

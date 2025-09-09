@@ -1,61 +1,15 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { StyleSheet, Text, View} from 'react-native';
 import HomePageScreen from '../Screens/HomePageScreen';
 import {  Home, Search, ListChecks, User  } from "lucide-react-native";
 import SearchScreen from '../Screens/SearchScreen';
 import ListScreen from '../Screens/ListScreen';
 import AccountScreen from '../Screens/AccountScreen';
-import FilmScreen from '../Screens/FilmScreen';
-import DiziScreen from '../Screens/DiziScreen';
-import SporScreen from '../Screens/SporScreen';
-import CocukScreen from '../Screens/CocukScreen';
-import CanlıTVScreen from '../Screens/CanlıTVScreen';
-
 
 
 
 const Tab = createBottomTabNavigator();
-
-const UpTop = createMaterialTopTabNavigator();
-
-function MenüTabs({navigation}) {
-  return (
-    <UpTop.Navigator
-      screenOptions={{
-        tabBarStyle: { backgroundColor: 'black' },
-         tabBarScrollEnabled: true,
-        tabBarActiveTintColor: 'white',
-        tabBarInactiveTintColor: 'white',
-        tabBarIndicatorStyle: { backgroundColor: 'black' },
-        tabBarLabelStyle: { fontSize: 14, fontWeight:'bold' },
-      }}
-    >
-      <UpTop.Screen name="Film" component={FilmScreen}
-      options={{
-        title: 'FİLM',
-        
-      }} />
-      <UpTop.Screen name="Dizi" component={DiziScreen}
-       options={{
-        title: 'DİZİ',
-      }}  />
-      <UpTop.Screen name="Spor" component={SporScreen}
-       options={{
-        title: 'SPOR',
-      }}  />
-      <UpTop.Screen name="Çocuk" component={CocukScreen}
-       options={{
-        title: 'ÇOCUK',
-      }}  />
-      <UpTop.Screen name="Canlı TV" component={CanlıTVScreen}
-       options={{
-        title: 'CANLI TV',
-      }}  />
-
-    </UpTop.Navigator>
-  );
-}
 
 function MyTabs({navigation}) {
   return (
@@ -66,8 +20,6 @@ function MyTabs({navigation}) {
           borderTopWidth: 0,
          },
         tabBarActiveTintColor: 'white',
-        
-      
       tabBarIcon : ({ color, size }) => {
         if (route.name === 'HomePage') {
           return <Home size={size} color={color} />;
@@ -82,7 +34,7 @@ function MyTabs({navigation}) {
       >
       <Tab.Screen 
       name="HomePage" 
-      component={MenüTabs}
+      component={HomePageScreen}
       options={{
         title: 'Ana Sayfa',
       }}/>
