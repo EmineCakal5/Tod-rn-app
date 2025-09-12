@@ -45,8 +45,9 @@ function AppNavigator() {
         name="MyTabs" 
         component={MyTabs}
         options={{
-        title:'homepage',
-                
+            title:'homepage',
+            headerShown:false
+         
         }} />        
         <Stack.Screen name="Package" component={PackageScreen} />
         <Stack.Screen name="HomePage" component={HomePageScreen} />
