@@ -130,9 +130,6 @@ function HomePageScreen({ navigation }) {
 
 
 
-
-
-
         {/*1. Poster kısmı*/}
         <View style={{ flex: 2 }}>
           <ScrollView
@@ -140,7 +137,6 @@ function HomePageScreen({ navigation }) {
             showsHorizontalScrollIndicator={false}
             pagingEnabled
             snapToInterval={420}
-
           >
             {movies.slice(7, 14).map((movie) => (
               <View key={movie.id} style={{ alignItems: "center" }}>
@@ -161,7 +157,8 @@ function HomePageScreen({ navigation }) {
 
           <View style={{
             flexDirection: 'row',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            marginTop: -31,
 
           }}
           >
@@ -202,28 +199,29 @@ function HomePageScreen({ navigation }) {
                   marginRight: 10,
                   borderWidth: 4,
                   borderRadius: 15,
-                  backgroundColor: 'black'
+                  backgroundColor: '#1f1d17'
                 }}
               >
                 <Image
                   source={{ uri: url }}
-                  style={{ width: '100%', height: 180 }}
+                  style={{ width: '100%', height: 185 }}
                   resizeMode='cover'
                 />
-                <Text style={{ color: 'white', fontSize: 12, fontWeight: 'bold' }}>
+                <Text style={{ 
+                  color: 'white', fontSize: 12, alignItems: 'center', alignItems:'center', textAlign:'center', marginTop: 5 }}>
                   Poster {index + 1}
                 </Text>
               </View>
             ))}
           </ScrollView>
-        </View>
+        {/*</View>*/}
 
 
         <View style={{
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          
+          marginTop:13
           
         }}
         >
@@ -241,11 +239,10 @@ function HomePageScreen({ navigation }) {
 
 
         {/*3. Poster kısmı*/}
-        <View>
+        {/*<View>*/}
           <ScrollView
             horizontal={true}
             showsHorizontalScrollIndicator={false}
-            style={{  }}
           >
             {tvShows.slice(9,20).map((tv) => (
               <TouchableOpacity
@@ -256,20 +253,22 @@ function HomePageScreen({ navigation }) {
                   marginRight: 10,
                   borderWidth: 4,
                   borderRadius: 15,
-                  backgroundColor: 'black'
+                  backgroundColor: '#1f1d17'
                 }}
                 onPress={() => navigation.navigate('DiziScreen', { tvId: tv.id })}
               >
                 <Image
                   source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
                   style={{
-                   width: '100%', height: 180
+                   width: '100%', height: 185
                   }}
                 />
+               
               </TouchableOpacity>
             ))}
           </ScrollView>
         </View>
+        
       </View>
     </ScrollView>
   );

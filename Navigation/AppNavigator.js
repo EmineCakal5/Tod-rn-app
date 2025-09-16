@@ -52,7 +52,9 @@ function AppNavigator() {
         }} />        
         <Stack.Screen name="Package" component={PackageScreen} />
         <Stack.Screen name="HomePage" component={HomePageScreen} />
-        <Stack.Screen name="FilmScreen" component={FilmScreen} />
+        <Stack.Screen name="FilmScreen" component={FilmScreen}
+        options={{headerShown: false
+        }} />
         <Stack.Screen name="DiziScreen" component={DiziScreen} />
         <Stack.Screen name="SporScreen" component={SporScreen} /> 
         <Stack.Screen name="CocukScreen" component={CocukScreen} />
