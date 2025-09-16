@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+         
+            "type": "top10inlocal",         
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-1.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-2.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-3.jpg"
+        },
+        {
+            
+            "type": "top10inlocal",           
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-4.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-5.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-6.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-7.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-8.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-9.jpg"
+        },
+        {
+            "type": "top10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/top10inlocal/Top10-10.jpg"
+        }
+    ]
+}

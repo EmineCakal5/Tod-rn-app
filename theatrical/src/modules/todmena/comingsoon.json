@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "title": "Operation Fortune",
+            "type": "comingsoon",
+            "movieName": "Operation Fortune: Ruse de Guerre",
+            "releaseDate": "20 October",
+            "genre": "Action, Thriller, Comedy",
+            "duration": "1h 54m",
+            "logoUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/operation/logo.png",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/operation/poster.png"
+        },
+        {
+            "title": "Ghost Busters",
+            "type": "comingsoon",
+            "movieName": "Ghost Busters: Afterlife",
+            "releaseDate": "21 October",
+            "genre": "Action, Thriller, Comedy",
+            "duration": "1h 54m",
+            "logoUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/ghostbusters/logo.png",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/ghostbusters/poster.png"
+        },
+        {
+            "title": "Matrix",
+            "type": "comingsoon",
+            "movieName": "The Matrix: Ressurections",
+            "releaseDate": "22 October",
+            "genre": "Action, Sci-Fi",
+            "duration": "1h 24m",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/ComingSoon_Matrix.png"
+        },
+        {
+            "title": "Nine Days",
+            "type": "comingsoon",
+            "movieName": "Nine Days",
+            "releaseDate": "23 October",
+            "genre": "Thriller, Drama",
+            "duration": "1h 04m",
+            "logoUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/ninedays/logo.png",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/ninedays/poster.png"
+        },
+        {
+            "title": "Resident Evil",
+            "type": "comingsoon",
+            "movieName": "Resident Evil: Welcome to Raccoon City",
+            "releaseDate": "24 October",
+            "genre": "Thriller, Sci-Fi, Action",
+            "duration": "1h 04m",
+            "logoUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/residentevil/logo.png",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/residentevil/poster.png"
+        },
+        {
+            "title": "Spiderman",
+            "type": "comingsoon",
+            "movieName": "Spiderman: No Way Home",
+            "releaseDate": "25 October",
+            "genre": "Sci-Fi, Action, Super-Hero",
+            "duration": "1h 04m",
+            "logoUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/spiderman/logo.png",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/comingsoon/spiderman/poster.png"
+        }
+    ]
+}

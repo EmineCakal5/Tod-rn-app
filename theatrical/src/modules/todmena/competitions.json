@@ -1,0 +1,88 @@
+{
+	"data": [
+		{
+			"title" : "Süper Lig",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_superligPoster.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Champions",
+			"type": "competitions",		
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_champions.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Conference League",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_europa.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "UEFA Europe League",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_europaleague.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Ligue 1",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_ligue1.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Premier League",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_premier.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "QNB Lig",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_qnb.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Süper Lig",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_superligPoster.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Champions",
+			"type": "competitions",		
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_champions.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Conference League",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_europa.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "UEFA Europe League",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_europaleague.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Ligue 1",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_ligue1.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "Premier League",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_premier.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		},
+		{
+			"title" : "QNB Lig",
+			"type": "competitions",
+			"image": "https://stb-media.todtv.com.tr/posters/competitions/competitions_qnb.jpg",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+		}
+	]
+}

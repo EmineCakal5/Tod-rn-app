@@ -1,0 +1,109 @@
+{
+    "data": [
+        {
+            "type": "tod360",
+            "matchId": "99",
+            "description": "Quarter Finals",
+            "header": "UEFA Champions League",
+            "footerBottom": "Quarter Finals",
+            "organizationId": "2",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+            "homeTeam": {
+                "name": "Liverpool",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+            },
+            "awayTeam": {
+                "name": "Bayern Munich",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/711.png"
+            },
+            "score": {
+                "homeTeamScore": "3",
+                "awayTeamScore": "1"
+            }
+        },
+        {
+            "type": "tod360",
+            "matchId": "999",
+            "description": "Quarter Finals",
+            "header": "Premier League",
+            "footerBottom": "Quarter Finals",
+            "organizationId": "2",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+            "homeTeam": {
+                "name": "Everton",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/218_1.png"
+            },
+            "awayTeam": {
+                "name": "Chelsea",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/200.png"
+            },
+            "score": {
+                "homeTeamScore": "1",
+                "awayTeamScore": "3"
+            }
+        },
+        {
+            "type": "tod360",
+            "matchId": "9999",
+            "description": "Matchday 25",
+            "header": "La Liga",
+            "footerBottom": "Quarter Finals",
+            "organizationId": "2",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+            "homeTeam": {
+                "name": "Real Madrid",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/508.png"
+            },
+            "awayTeam": {
+                "name": "Athletic Bilbao",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/407.png"
+            },
+            "score": {
+                "homeTeamScore": "3",
+                "awayTeamScore": "0"
+            }
+        },
+        {
+            "type": "tod360",
+            "matchId": "99999",
+            "description": "Matchday 25",
+            "header": "Serie A",
+            "footerBottom": "Quarter Finals",
+            "organizationId": "2",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+            "homeTeam": {
+                "name": "Inter",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/F458.png"
+            },
+            "awayTeam": {
+                "name": "Juventus",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/609.png"
+            },
+            "score": {
+                "homeTeamScore": "2",
+                "awayTeamScore": "1"
+            }
+        },
+        {
+            "type": "tod360",
+            "matchId": "999999",
+            "description": "Matchday 25",
+            "header": "Turkish Super League",
+            "footerBottom": "Quarter Finals",
+            "organizationId": "2",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+            "homeTeam": {
+                "name": "Besiktas",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/3_1.png"
+            },
+            "awayTeam": {
+                "name": "Galatasaray",
+                "logo": "https://media03.tr.beinsports.com/img/teams/1/1_5.png"
+            },
+            "score": {
+                "homeTeamScore": "3",
+                "awayTeamScore": "4"
+            }
+        }
+    ]
+}

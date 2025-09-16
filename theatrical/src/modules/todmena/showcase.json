@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "title": "Premier League",
+            "type": "showcase",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/showcase/content-1.png",
+            "heroPosterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+        },
+        {
+            "title": "Fifa World Cup",
+            "type": "showcase",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/showcase/content-2.png",
+            "heroPosterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+        },
+        {
+            "title": "La Liga",
+            "type": "showcase",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/showcase/content-3.png",
+            "heroPosterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+        },
+        {
+            "title": "Tennis",
+            "type": "showcase",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/showcase/content-4.png",
+            "heroPosterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+        },
+        {
+            "title": "Ligue 1",
+            "type": "showcase",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/showcase/content-5.png",
+            "heroPosterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg"
+        }
+    ]
+}

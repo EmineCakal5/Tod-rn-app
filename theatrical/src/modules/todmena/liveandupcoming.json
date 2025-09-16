@@ -1,0 +1,136 @@
+{
+	"data": [
+		{
+			"type": "liveandupcoming",
+			"isLive": true,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+			"organizationLogo": "https://media02.tr.beinsports.com/img/org/1/2.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "3",
+				"awayTeamScore": "2"
+			}
+		},
+		{
+			"type": "liveandupcoming",
+			"isLive": true,
+			"matchId": "999",
+			"smartTime": "19:00",
+			"smarDate": "11 April 2023",
+			"organizationId": "3",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Football.jpg",
+			"organizationLogo": "https://media02.tr.beinsports.com/img/org/1/3.png",
+			"homeTeam": {
+				"name": "Liverpool",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "0",
+				"awayTeamScore": "1"
+			}
+		},
+		{
+			"type": "liveandupcoming",
+			"isLive": false,
+			"matchId": "9999",
+			"smartTime": "20:00",
+			"smarDate": "12 April 2023",
+			"organizationId": "60",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+			"organizationLogo": "https://media02.tr.beinsports.com/img/org/1/O60.png",
+			"homeTeam": {
+				"name": "Real Madrid",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/508.png"
+			},
+			"awayTeam": {
+				"name": "Athletic Bilbao",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/407.png"
+			},
+			"score": {
+				"homeTeamScore": "",
+				"awayTeamScore": ""
+			}
+		},
+		{
+			"type": "liveandupcoming",
+			"isLive": true,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "4",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Football.jpg",
+			"organizationLogo": "https://media02.tr.beinsports.com/img/org/1/2.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "3",
+				"awayTeamScore": "2"
+			}
+		},
+		{
+			"type": "liveandupcoming",
+			"isLive": false,
+			"matchId": "999",
+			"smartTime": "19:00",
+			"smarDate": "11 April 2023",
+			"organizationId": "3",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+			"organizationLogo": "https://media02.tr.beinsports.com/img/org/1/3.png",
+			"homeTeam": {
+				"name": "Liverpool",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "",
+				"awayTeamScore": ""
+			}
+		},
+		{
+			"type": "liveandupcoming",
+			"isLive": false,
+			"matchId": "9999",
+			"smartTime": "20:00",
+			"smarDate": "12 April 2023",
+			"organizationId": "60",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Football.jpg",
+			"organizationLogo": "https://media02.tr.beinsports.com/img/org/1/O60.png",
+			"homeTeam": {
+				"name": "Real Madrid",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/508.png"
+			},
+			"awayTeam": {
+				"name": "Athletic Bilbao",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/407.png"
+			},
+			"score": {
+				"homeTeamScore": "",
+				"awayTeamScore": ""
+			}
+		}
+	]
+}

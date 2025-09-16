@@ -1,0 +1,34 @@
+{
+	"data": [
+		{
+			"title": "Harry Potter 1",
+			"type": "horizontalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-1.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-main.png"
+		},
+		{
+			"title": "Harry Potter 2",
+			"type": "horizontalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-2.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-main.png"
+		},
+		{
+			"title": "Harry Potter 3",
+			"type": "horizontalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-3.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-main.png"
+		},
+		{
+			"title": "Harry Potter 4",
+			"type": "horizontalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-4.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-main.png"
+		},
+		{
+			"title": "Harry Potter 5",
+			"type": "horizontalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-5.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/horizontal_collection/HarryPotter-main.png"
+		}
+	]
+}

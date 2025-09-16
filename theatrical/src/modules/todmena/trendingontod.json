@@ -1,0 +1,31 @@
+{
+	"data": [
+		{
+			"title": "Batman",
+			"year": "2009",
+			"type": "trendingontod",
+			"genre": "Action, Adventure, Fantasy",
+			"duration": "2h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/trendingontod/TrendingOnTOD_Batman.jpg"
+		},
+		{
+			"title": "Stair Case",
+			"year": "2007",
+			"type": "trendingontod",
+			"genre": "Drama, Horror, Sci-Fi",
+			"duration": "1h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/trendingontod/TrendingOnTOD_Staircase.jpg"
+		},
+		{
+			"title": "Tom Cruise",
+			"year": "2012",
+			"type": "trendingontod",
+			"genre": "Action, Sci-Fi, Thriller",
+			"duration": "1h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/trendingontod/TrendingOnTOD_TomCruise.jpg"
+		}
+	]
+}

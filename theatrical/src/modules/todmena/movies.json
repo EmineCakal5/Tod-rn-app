@@ -1,0 +1,64 @@
+{
+    "data": {
+        "name": "Movies",
+        "code": "movies",
+        "rails": [
+            {
+                "name": "Box Sets",
+                "code": "boxsets"
+            },
+            {
+                "name": "Showcase",
+                "code": "showcase"
+            },
+            {
+                "name": "New On Tod",
+                "code": "newontod"
+            },
+            {
+                "name": "Continue Watching",
+                "code": "continuewatching"
+            },
+            {
+                "name": "Trending On Tod",
+                "code": "trendingontod"
+            },
+            {
+                "name": "Coming Soon",
+                "code": "comingsoon"
+            },
+            {
+                "name": "Top Category Ten In Local",
+                "code": "topcategory10inlocal"
+            },
+            {
+                "name": "Harry Potter",
+                "code": "horizontalcollection"
+            },
+            {
+                "name": "Whats On Now",
+                "code": "whatsonnow"
+            },
+            {
+                "name": "Superheroes On TOD",
+                "code": "superheroesontod"
+            },
+            {
+                "name": "Will Smith",
+                "code": "verticalcollection"
+            },
+            {
+                "name": "Top 10 In Region",
+                "code": "top10inregion"
+            },
+            {
+                "name": "Top 10 In Local",
+                "code": "top10inlocal"
+            },
+            {
+                "name": "Oscar Winners",
+                "code": "boxsets"
+            }
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+{
+	"data": [
+		{
+			"type": "dontmissout",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/Poster.png",
+			"isLive": false,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/heroPoster.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "0",
+				"awayTeamScore": "4"
+			}
+		},
+		{
+			"type": "dontmissout",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/Poster-1.png",
+			"isLive": false,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/heroPoster.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "1",
+				"awayTeamScore": "2"
+			}
+		},
+		{
+			"type": "dontmissout",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/Poster-2.png",
+			"isLive": false,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/heroPoster.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "0",
+				"awayTeamScore": "1"
+			}
+		},
+		{
+			"type": "dontmissout",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/Poster-3.png",
+			"isLive": false,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/heroPoster.png",
+			"homeTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"awayTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"score": {
+				"homeTeamScore": "4",
+				"awayTeamScore": "3"
+			}
+		},
+		{
+			"type": "dontmissout",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/Poster-4.png",
+			"isLive": false,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/heroPoster.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "1",
+				"awayTeamScore": "4"
+			}
+		},
+		{
+			"type": "dontmissout",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/Poster-5.png",
+			"isLive": false,
+			"matchId": "99",
+			"smartTime": "18:00",
+			"smarDate": "10 April 2023",
+			"organizationId": "2",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/dontmissout/heroPoster.png",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"awayTeam": {
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "2",
+				"awayTeamScore": "4"
+			}
+		}
+	]
+}

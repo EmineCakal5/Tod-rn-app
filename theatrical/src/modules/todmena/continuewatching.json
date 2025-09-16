@@ -1,0 +1,69 @@
+{
+    "data": [
+        {
+            "title": "Avatar",
+            "year": "2009",
+            "type": "continuewatching",
+            "genre": "Action, Adventure, Fantasy",
+            "duration": "2h 42 min",
+            "rate": "14+",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/continuewatching/ContinueWatching_AgentTime.jpg",
+            "followMe": {
+                "total": "162",
+                "watched": "120"
+            }
+        },
+        {
+            "title": "I Am Legend",
+            "year": "2007",
+            "type": "continuewatching",
+            "genre": "Drama, Horror, Sci-Fi",
+            "duration": "1h 42 min",
+            "rate": "14+",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/continuewatching/ContinueWatching_Elvis.jpg",
+            "followMe": {
+                "total": "102",
+                "watched": "88"
+            }
+        },
+        {
+            "title": "The Avengers",
+            "year": "2012",
+            "type": "continuewatching",
+            "genre": "Action, Sci-Fi, Thriller",
+            "duration": "1h 42 min",
+            "rate": "14+",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/continuewatching/ContinueWatching_MotherAndroid.jpg",
+            "followMe": {
+                "total": "102",
+                "watched": "21"
+            }
+        },
+        {
+            "title": "The Wolf of Wall Street",
+            "year": "2013",
+            "type": "continuewatching",
+            "genre": "Biography, Comedy, Crime",
+            "duration": "2h 42 min",
+            "rate": "14+",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/continuewatching/ContinueWatching_ParisSaintGerman.jpg",
+            "followMe": {
+                "total": "162",
+                "watched": "99"
+            }
+        },
+        {
+            "title": "Interstellar",
+            "year": "2014",
+            "type": "continuewatching",
+            "genre": "Adventure, Drama, Sci-Fi",
+            "duration": "2h 42 min",
+            "rate": "14+",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/continuewatching/ContinueWatching_Renegades.jpg",
+            "followMe": {
+                "total": "162",
+                "watched": "50"
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "data": {
+        "name": "Movies",
+        "code": "movies",
+        "rails": [
+            {
+                "name": "Box Sets",
+                "code": "boxsets"
+            },
+            {
+                "name": "Showcase",
+                "code": "showcase"
+            },
+            {
+                "name": "New On Tod",
+                "code": "newontod"
+            },
+            {
+                "name": "Continue Watching",
+                "code": "continuewatching"
+            }
+        ]
+    }
+}

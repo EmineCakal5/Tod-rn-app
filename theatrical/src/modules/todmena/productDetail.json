@@ -1,0 +1,34 @@
+{
+    "id": 0,
+    "title": "Halloween Kills",
+    "year": "2021",
+    "rights": "R",
+    "genre": "Horror, Thriller",
+    "duration": "2h 11min",
+    "posterUrl": "https://stb-media.todtv.com.tr/posters/movies/halloween_kills/hero.png",
+    "trailerUrlDash": "https://dash.akamaized.net/dash264/TestCases/1b/qualcomm/1/MultiRatePatched.mpd",
+    "trailerHls": "https://assets.afcdn.com/video49/20210722/v_645516.m3u8",
+    "badges": [
+        "EXCLUSIVE ON TOD",
+        "IMDb 7.1",
+        "HD",
+        "DOLBY VISION",
+        "DOLBY ATMOS"
+    ],
+    "description": "The nightmare isn't over as unstoppable killer Michael Myers escapes from Laurie Strode's trap to continue his ritual bloodbath.",
+    "director": "John Carpenter",
+    "casts": "Donald Pleasence, Jamie Lee Curtis, Tony Moran",
+    "audio": [
+        "English",
+        "Arabic"
+    ],
+    "subtitles": [
+        "English",
+        "Arabic",
+        "French"
+    ],
+    "followMe": {
+        "total": "110",
+        "watched": "11"
+    }
+}

@@ -1,0 +1,76 @@
+{
+	"data": [
+		{
+			"title": "The Avengers",
+			"year": "2012",
+			"type": "newontod",
+			"genre": "Action, Sci-Fi, Thriller",
+			"duration": "1h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/All_The_Kingsmen.jpg"
+		},
+		{
+			"title": "The Wolf of Wall Street",
+			"year": "2013",
+			"type": "newontod",
+			"genre": "Biography, Comedy, Crime",
+			"duration": "2h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Another_mothers_son.jpg"
+		},
+		{
+			"title": "Interstellar",
+			"year": "2014",
+			"type": "newontod",
+			"genre": "Adventure, Drama, Sci-Fi",
+			"duration": "2h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Halloween_Kills.jpg"
+		},
+		{
+			"title": "Game of Thrones",
+			"year": "2011",
+			"type": "newontod",
+			"genre": "Adventure, Drama, Fantasy",
+			"duration": "49 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Just_Go_With_It.jpg"
+		},
+		{
+			"title": "Narcos",
+			"year": "2015",
+			"type": "newontod",
+			"genre": "Biography, Crime, Drama",
+			"duration": "42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Starfish.jpg"
+		},
+		{
+			"title": "Breaking Bad",
+			"year": "2008–2019",
+			"type": "newontod",
+			"genre": "Crime, Drama, Thriller",
+			"duration": "50 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Venom.jpg"
+		},
+		{
+			"title": "Narcos",
+			"year": "2015",
+			"type": "newontod",
+			"genre": "Biography, Crime, Drama",
+			"duration": "42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Starfish.jpg"
+		},
+		{
+			"title": "Narcos",
+			"year": "2015",
+			"type": "newontod",
+			"genre": "Biography, Crime, Drama",
+			"duration": "42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/newontod/Starfish.jpg"
+		}
+	]
+}

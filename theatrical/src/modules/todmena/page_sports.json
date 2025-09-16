@@ -1,0 +1,48 @@
+{
+    "data": {
+        "name": "Sports",
+        "code": "sports",
+        "rails": [
+            {
+                "name": "Showcase",
+                "code": "showcase"
+            },
+            {
+                "name": "Live & Upcoming",
+                "code": "liveandupcoming"
+            },
+            {
+                "name": "Continue Watching",
+                "code": "continuewatching"
+            },
+            {
+                "name": "Tournaments",
+                "code": "tournaments"
+            },
+            {
+                "name": "Competitions",
+                "code": "competitions"
+            },
+            {
+                "name": "Dont Miss Out",
+                "code": "dontmissout"
+            },
+            {
+                "name": "Tod 360 And Exclusive",
+                "code": "tod360"
+            },
+            {
+                "name": "Competitions",
+                "code": "squarecollection"
+            },
+            {
+                "name": "Football",
+                "code": "livefootball"
+            },
+            {
+                "name": "Sports",
+                "code": "sports"
+            }
+        ]
+    }
+}

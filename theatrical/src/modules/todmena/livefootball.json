@@ -1,0 +1,80 @@
+{
+	"data": [
+		{
+			"type": "livefootball",
+			"header": "UEFA Champions League",
+			"isLive": true,
+			"matchId": "99",
+			"smartTime": "22:00",
+			"smartDate": "20 Nov",
+			"organizationId": "2",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+			"homeTeam": {		
+				"name": "Manchester City",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"awayTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+			},
+			"score": {
+				"homeTeamScore": "3",
+				"awayTeamScore": "4"
+			},
+			"footerBottom": "Quarter Finals",
+			"matchDay": "",
+			"totalMatch": ""
+		},
+		{
+			"type": "livefootball",
+			"header": "Premier League",
+			"isLive": false,
+			"matchId": "999",
+			"smartTime": "22:00",
+			"smartDate": "20 Nov",
+			"organizationId": "4",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Football.jpg",
+			"homeTeam": {
+				"name": "Arsenal",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/157.png"
+
+			},
+			"awayTeam": {
+				"name": "Liverpool",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/265_1.png"
+			},
+			"score": {
+				"homeTeamScore": "3",
+				"awayTeamScore": "4"
+			},
+			"footerBottom": "",
+			"matchDay": "Matchday 29",
+			"totalMatch": "of 39"
+		},
+		{
+			"type": "livefootball",
+			"header": "La Liga",
+			"isLive": false,
+			"matchId": "9999",
+			"smartTime": "22:00",
+			"smartDate": "20 Nov",
+			"organizationId": "3",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/competitions/Competitions-main.jpg",
+			"homeTeam": {
+				"name": "Real Madrid",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/508.png"
+			},
+			"awayTeam": {
+				"name": "Athletic Bilbao",
+				"logo": "https://media03.tr.beinsports.com/img/teams/1/407.png"
+			},
+			"score": {
+				"homeTeamScore": "3",
+				"awayTeamScore": "4"
+			},
+			"footerBottom": "",
+			"matchDay": "Matchday 29",
+			"totalMatch": "of 39"
+		}
+	]
+}

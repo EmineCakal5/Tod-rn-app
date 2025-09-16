@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+         
+            "type": "topcategory10inlocal",         
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_1.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_2.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_3.jpg"
+        },
+        {
+            
+            "type": "topcategory10inlocal",           
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_4.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_5.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_6.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_7.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_8.jpg"
+        },
+		{
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_9.jpg"
+        },
+        {
+            "type": "topcategory10inlocal",
+            "posterUrl": "https://stb-media.todtv.com.tr/posters/topcategory10inlocal/Horror_10.jpg"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+
+{
+    "title": "The Shield",
+    "type": "episodes",
+    "year": "2021",
+    "rights": "R",
+    "genre": "Action, Crime, Thriller",
+    "duration": "1h 59min",
+	  "posterUrl" : "https://stb-media.todtv.com.tr/posters/series/theshield/hero.png",
+    "badges": [
+        "EXCLUSIVE ON TOD",
+        "IMDb 7.4",
+        "HD",
+        "DOLBY VISION",
+        "DOLBY ATMOS"
+    ],
+    "description": "While Dutch and Claudette investigate the murder of Nancy Reborg, they discover that her daughter is missing and has been sold by her addict father to a child molester. David tries to crack corruption in the Barn by recruiting Terry to help him take.",
+    "director": "Shawn Ryan",
+    "casts": "Michael Chiklis, Catherine Dent, Walton Goggins",
+    "audio": [
+        "English",
+        "Arabic"
+    ],
+    "subtitles": [
+        "English",
+        "Arabic",
+        "French"
+    ],
+    "followMe": {
+        "total": "120",
+        "watched": "63"
+    },
+    "seasons": [
+        {
+            "no": "1",
+            "episodeCount": "6"
+          
+        },
+        {
+            "no": "2",
+            "episodeCount": "2"
+         
+        },
+        {
+            "no": "3",
+            "episodeCount": "2"
+        
+        },
+        {
+            "no": "4",
+            "episodeCount": "2"
+          
+        },
+        {
+            "no": "5",
+            "episodeCount": "2"
+          
+        },
+        {
+            "no": "6",
+            "episodeCount": "2"
+           
+        }
+    ]
+}

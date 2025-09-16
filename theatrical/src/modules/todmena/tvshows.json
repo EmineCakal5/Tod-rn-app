@@ -1,0 +1,68 @@
+{
+  "data": {
+    "name": "Home",
+    "code": "home",
+    "rails": [
+      {
+        "name": "Continue Watching",
+        "code": "continuewatching"
+      },
+      {
+        "name": "Showcase",
+        "code": "showcase"
+      },
+      {
+        "name": "Must Watch Series",
+        "code": "newontod"
+      },
+      {
+        "name": "Tod Originals",
+        "code": "boxsets"
+      },
+      {
+        "name": "Bingeable Series",
+        "code": "trendingontod"
+      },
+      {
+        "name": "Documentaries",
+        "code": "comingsoon"
+      },
+      {
+        "name": "Top Drama Series in Qatar",
+        "code": "topcategory10inlocal"
+      },
+      {
+        "name": "Horizontal Collection",
+        "code": "horizontalcollection"
+      },
+      {
+        "name": "Whats On Now",
+        "code": "whatsonnow"
+      },
+      {
+        "name": "Turkish Series",
+        "code": "horizontalcollection"
+      },
+      {
+        "name": "Vertical Collection",
+        "code": "verticalcollection"
+      },
+      {
+        "name": "Top 10 In MENA Today",
+        "code": "top10inregion"
+      },
+      {
+        "name": "Top 10 In Qatar Today",
+        "code": "top10inlocal"
+      },
+      {
+        "name": "Western Series",
+        "code": "boxsets"
+      },
+      {
+        "name": "Talent & Talk Shows",
+        "code": "verticalcollection"
+      }
+    ]
+  }
+}

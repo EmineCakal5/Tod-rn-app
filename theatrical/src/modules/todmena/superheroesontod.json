@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "title": "Batman",
+      "type": "superheroesontod",
+      "posterUrl": "https://stb-media.todtv.com.tr/posters/superheros/SuperHerosOnTOD_Batman.jpg",
+      "year": "2019",
+      "rate": "PG-13",
+      "genre": "Action, Adventure, Science Fiction",
+      "duration": "2h 23m"
+    },
+    {
+      "title": "Black Adam",
+      "type": "superheroesontod",
+      "posterUrl": "https://stb-media.todtv.com.tr/posters/superheros/SuperHerosOnTOD_WonderWoman.jpg",
+      "year": "2019",
+      "rate": "PG-13",
+      "genre": "Action, Adventure, Science Fiction",
+      "duration": "2h 23m"
+    },
+    {
+      "title": "Green Antern",
+      "type": "superheroesontod",
+      "posterUrl": "https://stb-media.todtv.com.tr/posters/superheros/SuperHerosOnTOD_GreenAntern.jpg",
+      "year": "2019",
+      "rate": "PG-13",
+      "genre": "Action, Adventure, Science Fiction",
+      "duration": "2h 23m"
+    },
+    {
+      "title": "The Justice League",
+      "type": "superheroesontod",
+      "posterUrl": "https://stb-media.todtv.com.tr/posters/superheros/SuperHerosOnTOD_JusticeLeague.jpg",
+      "year": "2019",
+      "rate": "PG-13",
+      "genre": "Action, Adventure, Science Fiction",
+      "duration": "2h 23m"
+    },
+    {
+      "title": "Spiderman",
+      "type": "superheroesontod",
+      "posterUrl": "https://stb-media.todtv.com.tr/posters/superheros/SuperHerosOnTOD_Spiderman.jpg",
+      "year": "2019",
+      "rate": "PG-13",
+      "genre": "Action, Adventure, Science Fiction",
+      "duration": "2h 23m"
+    },
+    {
+      "title": "Wonder Woman",
+      "type": "superheroesontod",
+      "posterUrl": "https://stb-media.todtv.com.tr/posters/superheros/SuperHerosOnTOD_WonderWoman.jpg",
+      "year": "2019",
+      "rate": "PG-13",
+      "genre": "Action, Adventure, Science Fiction",
+      "duration": "2h 23m"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+	"data": [
+		{
+			"title": "Champions League",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_champions.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		},
+		{
+			"title": "Europa Conferance League",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_europa.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		},
+		{
+			"title": "UEFA Europa League",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_europaleague.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		},
+		{
+			"title": "Ligue 1",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_ligue1.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		},
+		{
+			"title": "Premier League",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_premier.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		},
+		{
+			"title": "QNB League",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_qnb.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		},
+		{
+			"title": "Super League",
+			"type": "squarecollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/competitions_superligPoster.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/square_collection/Competitions-main.jpg"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"data": [
+		{
+			"title": "Will Smith 1",
+			"type": "verticalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-1.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-main.png"
+		},
+		{
+			"title": "Will Smith 2",
+			"type": "verticalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-2.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-main.png"
+		},
+		{
+			"title": "Will Smith 3",
+			"type": "verticalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-3.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-main.png"
+		},
+		{
+			"title": "Will Smith 4",
+			"type": "verticalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-4.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-main.png"
+		},
+		{
+			"title": "Will Smith 5",
+			"type": "verticalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-5.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-main.png"
+		},
+		{
+			"title": "Will Smith 6",
+			"type": "verticalcollection",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-6.jpg",
+			"heroPosterUrl": "https://stb-media.todtv.com.tr/posters/vertical_collection/WillSmith-main.png"
+		}
+	]
+}

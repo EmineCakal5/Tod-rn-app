@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"title": "Basketball",
+			"type": "sports",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Basketball.jpg"
+		},
+		{
+			"title": "Cycling",
+			"type": "sports",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Cycling.jpg"
+		},
+		{
+			"title": "Football",
+			"type": "sports",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Football.jpg"
+		},
+		{
+			"title": "MotorSports",
+			"type": "sports",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Motorsports.jpg"
+		},
+		{
+			"title": "Tennis",
+			"type": "sports",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/sports/Sports_Tennis.jpg"
+		}
+	]
+}

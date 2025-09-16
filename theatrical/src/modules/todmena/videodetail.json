@@ -1,0 +1,83 @@
+{
+	"data": [
+		{
+			"title": "Avatar",
+			"year": "2009",
+			"season": "S1",
+			"episodeNumber": "E1",
+			"episodeName": "Pilot",
+			"play": {
+				"hsl": "https://bein-tod-vod.akamaized.net/tod2/hd/cln/playlist.m3u8",
+				"dash": "https://bein-tod-vod.akamaized.net/tod2/hd/cln/playlist.mpd"
+			},
+			"type": "boxsets",
+			"genre": "Action, Adventure, Fantasy",
+			"duration": "2h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_Boyka.jpg"
+		},
+		{
+			"title": "I Am Legend",
+			"year": "2007",
+			"type": "boxsets",
+			"genre": "Drama, Horror, Sci-Fi",
+			"duration": "1h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_CharliesAngels.jpg"
+		},
+		{
+			"title": "The Avengers",
+			"year": "2012",
+			"type": "boxsets",
+			"genre": "Action, Sci-Fi, Thriller",
+			"duration": "1h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_Equalizer2.jpg"
+		},
+		{
+			"title": "The Wolf of Wall Street",
+			"year": "2013",
+			"type": "boxsets",
+			"genre": "Biography, Comedy, Crime",
+			"duration": "2h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_ResidentEvil.jpg"
+		},
+		{
+			"title": "Interstellar",
+			"year": "2014",
+			"type": "boxsets",
+			"genre": "Adventure, Drama, Sci-Fi",
+			"duration": "2h 42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_ReturnOfXanderCage.jpg"
+		},
+		{
+			"title": "Game of Thrones",
+			"year": "2011",
+			"type": "boxsets",
+			"genre": "Adventure, Drama, Fantasy",
+			"duration": "49 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_Spiderman.jpg"
+		},
+		{
+			"title": "Narcos",
+			"year": "2015",
+			"type": "boxsets",
+			"genre": "Biography, Crime, Drama",
+			"duration": "42 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_Undisputed.jpg"
+		},
+		{
+			"title": "Breaking Bad",
+			"year": "2008–2019",
+			"type": "boxsets",
+			"genre": "Crime, Drama, Thriller",
+			"duration": "50 min",
+			"rate": "14+",
+			"posterUrl": "https://stb-media.todtv.com.tr/posters/boxsets/BoxSets_Venom.jpg"
+		}
+	]
+}
