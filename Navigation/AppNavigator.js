@@ -12,6 +12,8 @@ import CocukScreen from '../Screens/CocukScreen';
 import CanliTVScreen from '../Screens/CanliTVScreen';
 import HomePageScreen from '../Screens/HomePageScreen';
 import FormulaScreen from '../Screens/FormulaScreen';
+import MovieDetailScreen from '../Screens/MovieDetailScreen';
+import DiziDetailScreen from '../Screens/DiziDetailScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +62,8 @@ function AppNavigator() {
         <Stack.Screen name="CocukScreen" component={CocukScreen} />
         <Stack.Screen name="CanliTVScreen" component={CanliTVScreen} />
         <Stack.Screen name="FormulaScreen" component={FormulaScreen} />
+        <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} />
+        <Stack.Screen name="DiziDetailsScreen" component={DiziDetailScreen} />
     
       </Stack.Navigator>
   );

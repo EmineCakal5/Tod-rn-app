@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Text, View, ScrollView, Image, StyleSheet } from 'react-native';
 import { ChevronRight, Tv } from 'lucide-react-native';
 
-
+const Categories = ['Özetler','Yarışlar','Antrenman ','Sıralama ','Finishline'];
 function HomePageScreen({ navigation }) {
 
   const [movies, setMovies] = useState([]);
@@ -136,17 +136,17 @@ function HomePageScreen({ navigation }) {
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             pagingEnabled
-            snapToInterval={420}
+            snapToInterval={400}
           >
             {movies.slice(7, 14).map((movie) => (
               <View key={movie.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
                   key={movie.id}
-                  onPress={() => navigation.navigate('FilmScreen', { movieId: movie.id })}
+                  onPress={() => navigation.navigate('MovieDetailScreen', { movie })}
                 >
                   <Image
                     source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
-                    style={{ width: 420, height: 350 }}
+                    style={{ width: 400, height: 350 }}
                     resizeMode='stretch'
                   />
                 </TouchableOpacity>
@@ -207,11 +207,10 @@ function HomePageScreen({ navigation }) {
                   style={{ width: '100%', height: 185 }}
                   resizeMode='cover'
                 />
-                <Text style={{ 
-                  color: 'white', fontSize: 12, alignItems: 'center', alignItems:'center', textAlign:'center', marginTop: 5 }}>
-                  Poster {index + 1}
+                <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', textAlign: 'center', marginTop: 5 ,alignItems:'center'}}>
+                  Formula 1 {Categories[index]}
                 </Text>
-              </View>
+              </View> 
             ))}
           </ScrollView>
         {/*</View>*/}
@@ -255,7 +254,7 @@ function HomePageScreen({ navigation }) {
                   borderRadius: 15,
                   backgroundColor: '#1f1d17'
                 }}
-                onPress={() => navigation.navigate('DiziScreen', { tvId: tv.id })}
+                onPress={() => navigation.navigate('DiziDetailsScreen', { tv })}
               >
                 <Image
                   source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
@@ -263,6 +262,9 @@ function HomePageScreen({ navigation }) {
                    width: '100%', height: 185
                   }}
                 />
+                <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', alignItems:'center', textAlign:'center', marginTop: 5 }}>
+                  {tv.name}
+                </Text>
                
               </TouchableOpacity>
             ))}
