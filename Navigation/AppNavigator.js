@@ -18,6 +18,8 @@ import MovieDetailScreen from '../Screens/MovieDetailScreen';
 import DiziDetailScreen from '../Screens/DiziDetailScreen';
 import EnCokIzlenenlerScreen from '../Screens/EnCokIzlenenlerScreen';
 import SearchScreen from '../Screens/SearchScreen';
+import TopFilmScreen from '../Screens/TopFilmScreen';
+import TopFilmWeekScreen from '../Screens/TopFilmWeekScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -97,6 +99,28 @@ function AppNavigator() {
 
                 })} />
                 <Stack.Screen name="Arama" component={SearchScreen} />
+                <Stack.Screen name="TopFilmScreen" component={TopFilmScreen}
+                options={({ navigation}) => ({
+                    title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
+                <Stack.Screen name="TopFilmWeekScreen" component={TopFilmWeekScreen}
+                options={({ navigation}) => ({
+                    title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
 
         </Stack.Navigator>
     );

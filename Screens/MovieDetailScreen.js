@@ -2,8 +2,6 @@ import React from 'react';
 import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { ChevronRight, Tv } from 'lucide-react-native';
 
-
-
 const genreMap = {
   12: "Macera",
   14: "Fantastik",

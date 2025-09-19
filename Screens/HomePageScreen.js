@@ -17,7 +17,7 @@ function HomePageScreen({ navigation }) {
         const [moviesRes, tvRes] = await Promise.all([
           fetch(
           'https://api.themoviedb.org/3/movie/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'),
-          fetch('https://api.themoviedb.org/3/tv/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR') 
+          fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR') 
         ]);
         const moviesData = await moviesRes.json();
         setMovies(moviesData.results);

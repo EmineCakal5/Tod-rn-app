@@ -4,20 +4,29 @@ import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Alert} fro
 import { ChevronRight, Tv } from 'lucide-react-native';
 
 
-
-
 export default function FilmScreen({ navigation }) {
 
-  const [movies, setMovies] = useState([]);
+ const [movies, setMovies] = useState([]);
+  const [fawMovies, setFawMovies] = useState([]);
 
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const moviesRes = await fetch(
-          'https://api.themoviedb.org/3/movie/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'
-        );
+        const [moviesRes, fawMoviesRes] = await Promise.all([
+          fetch(
+            'https://api.themoviedb.org/3/movie/top_rated?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'
+          ),
+          fetch(
+            'https://api.themoviedb.org/3/trending/movie/week?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'
+          ),
+        ]);
+
         const moviesData = await moviesRes.json();
+        const fawMoviesData = await fawMoviesRes.json();
+
         setMovies(moviesData.results);
+        setFawMovies(fawMoviesData.results);
+
       } catch (error) {
         console.error(error);
       }
@@ -90,15 +99,19 @@ export default function FilmScreen({ navigation }) {
             pagingEnabled
             snapToInterval={420}
           >
-            {movies.slice(7, 14).map((movie) => (
+            {movies.slice(0, 7).map((movie) => (
               <View key={movie.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
                   key={movie.id}
+                  style={{
+                    width: 420,
+                    height: 350,
+                  }}
                   onPress={() => navigation.navigate('MovieDetailScreen', { movie})}
                 >
                   <Image
                     source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
-                    style={{ width: 420, height: 350 }}
+                    style={{ width: '100%', height: '100%' }}
                     resizeMode='stretch'
                   />
                 </TouchableOpacity>
@@ -118,11 +131,11 @@ export default function FilmScreen({ navigation }) {
           }}
           >
             <TouchableOpacity
-              onPress={() => navigation.navigate('FormulaScreen')}>
+              onPress={() => navigation.navigate('TopFilmScreen')}>
               <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Öne Çıkanlar</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('FormulaScreen')}
+              onPress={() => navigation.navigate('TopFilmScreen', {movies})}
               style={{ marginTop: 70, borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4 }} >
               <ChevronRight
                 size={22}
@@ -179,11 +192,11 @@ export default function FilmScreen({ navigation }) {
           }}
           >
             <TouchableOpacity
-              onPress={() => navigation.navigate('FormulaScreen')}>
+              onPress={() => navigation.navigate('TopFilmWeekScreen')}>
               <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Bu Hafta En Çok İzlenenler</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('FormulaScreen')}
+              onPress={() => navigation.navigate('TopFilmWeekScreen', {movies: fawMoviesf})}
               style={{ marginTop: 70, borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4 }} >
               <ChevronRight
                 size={22}
@@ -196,11 +209,11 @@ export default function FilmScreen({ navigation }) {
             horizontal={true}
             showsHorizontalScrollIndicator={false} >
 
-            {movies.slice(16,26).map((movie) => (
-              <View key={movie.id} style={{ alignItems: "center" }}>
+            {fawMovies.slice(0,8).map((faw) => (
+              <View key={faw.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
 
-                key={movie.id}
+                key={faw.id}
                 style={{
                   width: 150,
                   height: 225,
@@ -209,10 +222,10 @@ export default function FilmScreen({ navigation }) {
                   borderRadius: 15,
                   backgroundColor: '#1f1d17'
                 }}
-                onPress={() => navigation.navigate('MovieDetailScreen', {movie})}
+                onPress={() => navigation.navigate('MovieDetailScreen', {movie: faw})}
               >
                 <Image
-                  source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
+                  source={{ uri: `https://image.tmdb.org/t/p/w500${faw.poster_path}` }}
                   style={{ width: '100%', height: 180 }}
                   resizeMode='stretch'
                 />
@@ -225,18 +238,13 @@ export default function FilmScreen({ navigation }) {
                   justifyContent: 'center',
                   textAlign: 'center',
 
-                }}> {movie.title} </Text>
+                }}> {faw.title} </Text>
               </TouchableOpacity>
               </View>
             ))}
           </ScrollView>
-
           </View>
-
-
         </View>
-
-    
     </ScrollView>
   );
 }
