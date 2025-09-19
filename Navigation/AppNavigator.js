@@ -1,4 +1,6 @@
 import React from 'react';
+import { Search } from 'lucide-react-native';
+import { TouchableOpacity, TextInput } from 'react-native';
 import HomeScreen from '../Screens/HomeScreen';
 import DetailsScreen from '../Screens/DetailsScreen';
 import PasswordScreen from '../Screens/PasswordScreen';
@@ -14,59 +16,90 @@ import HomePageScreen from '../Screens/HomePageScreen';
 import FormulaScreen from '../Screens/FormulaScreen';
 import MovieDetailScreen from '../Screens/MovieDetailScreen';
 import DiziDetailScreen from '../Screens/DiziDetailScreen';
+import EnCokIzlenenlerScreen from '../Screens/EnCokIzlenenlerScreen';
+import SearchScreen from '../Screens/SearchScreen';
+
 
 const Stack = createNativeStackNavigator();
 
 
 function AppNavigator() {
-  return (
+    return (
 
         <Stack.Navigator initialRouteName="Home"
-        screenOptions={{
-        headerStyle:{backgroundColor:'black'},
-        headerTintColor:'white',
-        }}>
-        <Stack.Screen 
-        name="Home" 
-        component={HomeScreen}
-        options={{
-            title:'HomeScreen',
-        }} />
-        <Stack.Screen 
-        name="Details" 
-        component={DetailsScreen}
-        options={{
-            title:'Details',
-        }} />
-        <Stack.Screen 
-        name="Password" 
-        component={PasswordScreen}
-        options={{
-            title:'password',
-        }} />
-        <Stack.Screen 
-        name="MyTabs" 
-        component={MyTabs}
-        options={{
-            title:'homepage',
-            headerShown:false
-         
-        }} />        
-        <Stack.Screen name="Package" component={PackageScreen} />
-        <Stack.Screen name="HomePage" component={HomePageScreen} />
-        <Stack.Screen name="FilmScreen" component={FilmScreen}
-        options={{headerShown: false
-        }} />
-        <Stack.Screen name="DiziScreen" component={DiziScreen} />
-        <Stack.Screen name="SporScreen" component={SporScreen} /> 
-        <Stack.Screen name="CocukScreen" component={CocukScreen} />
-        <Stack.Screen name="CanliTVScreen" component={CanliTVScreen} />
-        <Stack.Screen name="FormulaScreen" component={FormulaScreen} />
-        <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} />
-        <Stack.Screen name="DiziDetailsScreen" component={DiziDetailScreen} />
-    
-      </Stack.Navigator>
-  );
+            screenOptions={{
+                headerStyle: { backgroundColor: 'black' },
+                headerTintColor: 'white',
+            }}>
+            <Stack.Screen
+                name="Home"
+                component={HomeScreen}
+                options={{
+                    title: 'HomeScreen',
+                }} />
+            <Stack.Screen
+                name="Details"
+                component={DetailsScreen}
+                options={{
+                    title: 'Details',
+                }} />
+            <Stack.Screen
+                name="Password"
+                component={PasswordScreen}
+                options={{
+                    title: 'password',
+                }} />
+            <Stack.Screen
+                name="MyTabs"
+                component={MyTabs}
+                options={{
+                    title: 'homepage',
+                    headerShown: false
+
+                }} />
+            <Stack.Screen name="Package" component={PackageScreen} />
+            <Stack.Screen name="HomePage" component={HomePageScreen} />
+            <Stack.Screen name="FilmScreen" component={FilmScreen}
+                options={{
+                    headerShown: false
+                }} />
+            <Stack.Screen name="DiziScreen" component={DiziScreen}
+            options={{
+                headerShown: false
+            }} />
+            <Stack.Screen name="SporScreen" component={SporScreen} />
+            <Stack.Screen name="CocukScreen" component={CocukScreen} />
+            <Stack.Screen name="CanliTVScreen" component={CanliTVScreen} />
+            <Stack.Screen name="FormulaScreen" component={FormulaScreen}
+            options={({ navigation }) => ({
+                title: 'Formula 1',
+                headerTitleAlign: 'center',
+                headerRight: () => (
+                    <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                        style={{ marginRight: 10 }}>
+                        <Search color="white" />
+                    </TouchableOpacity>
+                )
+            })} />
+            <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} />
+            <Stack.Screen name="DiziDetailsScreen" component={DiziDetailScreen} />
+            <Stack.Screen name="EnCokIzlenenlerScreen" component={EnCokIzlenenlerScreen}
+                options={({ navigation}) => ({
+                    title: 'En Çok İzlenenler',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                          
+                        </TouchableOpacity>
+                    )
+
+                })} />
+                <Stack.Screen name="Arama" component={SearchScreen} />
+
+        </Stack.Navigator>
+    );
 }
 
 export default AppNavigator;

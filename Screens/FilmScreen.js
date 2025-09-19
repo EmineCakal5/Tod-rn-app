@@ -5,6 +5,7 @@ import { ChevronRight, Tv } from 'lucide-react-native';
 
 
 
+
 export default function FilmScreen({ navigation }) {
 
   const [movies, setMovies] = useState([]);
@@ -93,7 +94,7 @@ export default function FilmScreen({ navigation }) {
               <View key={movie.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
                   key={movie.id}
-                  onPress={() => navigation.navigate('FilmScreen', { movieId: movie.id })}
+                  onPress={() => navigation.navigate('MovieDetailScreen', { movie})}
                 >
                   <Image
                     source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
@@ -136,8 +137,9 @@ export default function FilmScreen({ navigation }) {
             horizontal={true}
             showsHorizontalScrollIndicator={false} >
 
-            {movies.slice(8,15).map((movie) => (
-              <View
+            {movies.slice(9,16).map((movie) => (
+              <View >
+                <TouchableOpacity
                 key={movie.id}
                 style={{
                   width: 150,
@@ -147,7 +149,7 @@ export default function FilmScreen({ navigation }) {
                   borderRadius: 15,
                   backgroundColor: '#1f1d17'
                 }}
-                onPress={() => navigation.navigate('DiziScreen', {movieId: movie.id })}
+                onPress={() => navigation.navigate('MovieDetailScreen', {movie})}
               >
                 <Image
                   source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
@@ -164,6 +166,7 @@ export default function FilmScreen({ navigation }) {
                   textAlign: 'center',
 
                 }}> {movie.title} </Text>
+              </TouchableOpacity>
               </View>
             ))}
           </ScrollView>
@@ -193,8 +196,10 @@ export default function FilmScreen({ navigation }) {
             horizontal={true}
             showsHorizontalScrollIndicator={false} >
 
-            {movies.slice(14,29).map((movie) => (
-              <View
+            {movies.slice(16,26).map((movie) => (
+              <View key={movie.id} style={{ alignItems: "center" }}>
+                <TouchableOpacity
+
                 key={movie.id}
                 style={{
                   width: 150,
@@ -204,7 +209,7 @@ export default function FilmScreen({ navigation }) {
                   borderRadius: 15,
                   backgroundColor: '#1f1d17'
                 }}
-                onPress={() => navigation.navigate('DiziScreen', {movieId: movie.id })}
+                onPress={() => navigation.navigate('MovieDetailScreen', {movie})}
               >
                 <Image
                   source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
@@ -221,6 +226,7 @@ export default function FilmScreen({ navigation }) {
                   textAlign: 'center',
 
                 }}> {movie.title} </Text>
+              </TouchableOpacity>
               </View>
             ))}
           </ScrollView>

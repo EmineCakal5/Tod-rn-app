@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { ChevronRight, Tv } from 'lucide-react-native';
 
 
@@ -102,17 +102,17 @@ export default function DiziScreen({ navigation }) {
                       horizontal={true}
                       showsHorizontalScrollIndicator={false}
                       pagingEnabled
-                      snapToInterval={420}
+                      snapToInterval={400}
                     >
                       {tvShows.slice(7, 14).map((tv) => (
                         <View key={tv.id} style={{ alignItems: "center" }}>
                           <TouchableOpacity
                             key={tv.id}
-                            onPress={() => navigation.navigate('DiziScreen', { tvId: tv.id })}
+                            onPress={() => navigation.navigate('DiziDetailsScreen', { tv})}
                           >
                             <Image
                               source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
-                              style={{ width: 420, height: 350 }}
+                              style={{ width: 400, height: 350 }}
                               resizeMode='stretch'
                             />
                           </TouchableOpacity>
@@ -147,7 +147,8 @@ export default function DiziScreen({ navigation }) {
                                 showsHorizontalScrollIndicator={false} >
                     
                                 {tvShows.slice(8,15).map((tv) => (
-                                  <View
+                                  <View key={tv.id} style={{ alignItems: "center" }}>
+                                  <TouchableOpacity
                                     key={tv.id}
                                     style={{
                                       width: 150,
@@ -157,7 +158,7 @@ export default function DiziScreen({ navigation }) {
                                       borderRadius: 15,
                                       backgroundColor: '#1f1d17'
                                     }}
-                                    onPress={() => navigation.navigate('DiziScreen', {tvId: tv.id })}
+                                    onPress={() => navigation.navigate('DiziDetailsScreen', {tv})}
                                   >
                                     <Image
                                       source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
@@ -174,6 +175,7 @@ export default function DiziScreen({ navigation }) {
                                       textAlign: 'center',
                     
                                     }}> {tv.name} </Text>
+                                  </TouchableOpacity>
                                   </View>
                                 ))}
                               </ScrollView>
