@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Alert} from 'react-native';
+import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import { ChevronRight, Tv } from 'lucide-react-native';
 
 
@@ -97,21 +97,18 @@ export default function FilmScreen({ navigation }) {
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             pagingEnabled
-            snapToInterval={420}
+            snapToInterval={400}
           >
             {movies.slice(0, 7).map((movie) => (
               <View key={movie.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
                   key={movie.id}
-                  style={{
-                    width: 420,
-                    height: 350,
-                  }}
+                  
                   onPress={() => navigation.navigate('MovieDetailScreen', { movie})}
                 >
                   <Image
                     source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
-                    style={{ width: '100%', height: '100%' }}
+                    style={{ width: 400, height: 350 }}
                     resizeMode='stretch'
                   />
                 </TouchableOpacity>
@@ -131,7 +128,7 @@ export default function FilmScreen({ navigation }) {
           }}
           >
             <TouchableOpacity
-              onPress={() => navigation.navigate('TopFilmScreen')}>
+              onPress={() => navigation.navigate('TopFilmScreen', {movies})}>
               <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Öne Çıkanlar</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -184,6 +181,8 @@ export default function FilmScreen({ navigation }) {
             ))}
           </ScrollView>
 
+          {/*3. Poster*/}
+
           <View style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
@@ -192,11 +191,11 @@ export default function FilmScreen({ navigation }) {
           }}
           >
             <TouchableOpacity
-              onPress={() => navigation.navigate('TopFilmWeekScreen')}>
+              onPress={() => navigation.navigate('TopFilmWeekScreen', {fawMovies})}>
               <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Bu Hafta En Çok İzlenenler</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('TopFilmWeekScreen', {movies: fawMoviesf})}
+              onPress={() => navigation.navigate('TopFilmWeekScreen', { fawMovies})}
               style={{ marginTop: 70, borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4 }} >
               <ChevronRight
                 size={22}
@@ -209,7 +208,7 @@ export default function FilmScreen({ navigation }) {
             horizontal={true}
             showsHorizontalScrollIndicator={false} >
 
-            {fawMovies.slice(0,8).map((faw) => (
+            {fawMovies.slice(0,5).map((faw) => (
               <View key={faw.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
 

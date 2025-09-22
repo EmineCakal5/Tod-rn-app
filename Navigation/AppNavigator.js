@@ -20,6 +20,8 @@ import EnCokIzlenenlerScreen from '../Screens/EnCokIzlenenlerScreen';
 import SearchScreen from '../Screens/SearchScreen';
 import TopFilmScreen from '../Screens/TopFilmScreen';
 import TopFilmWeekScreen from '../Screens/TopFilmWeekScreen';
+import TopDiziScreen from '../Screens/TopDiziScreen';
+import TopDiziWeekScreen from '../Screens/TopDiziWeekScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -121,6 +123,8 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
+                <Stack.Screen name="TopDiziScreen" component={TopDiziScreen}/>
+                <Stack.Screen name="TopDiziWeekScreen" component={TopDiziWeekScreen}/>
 
         </Stack.Navigator>
     );

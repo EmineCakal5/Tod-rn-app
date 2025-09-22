@@ -224,9 +224,12 @@ function HomePageScreen({ navigation }) {
           
         }}
         >
-          <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 16 }}>En Çok İzlenenler </Text>
           <TouchableOpacity
-            onPress={() => navigation.navigate('EnCokIzlenenlerScreen', { tvShows })}
+            onPress={() => navigation.navigate('EnCokIzlenenlerScreen', {tvShows})}>
+          <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 16 }}>En Çok İzlenenler </Text>
+            </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('EnCokIzlenenlerScreen', {tvShows})}
             style={{  borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4, marginLeft:209 }} >
             <ChevronRight
               size={22}
