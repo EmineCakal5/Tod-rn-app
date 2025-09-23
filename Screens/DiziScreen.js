@@ -118,7 +118,6 @@ export default function DiziScreen({ navigation }) {
               {tvShows.slice(7, 14).map((tv) => (
                 <View key={tv.id} style={{ alignItems: "center" }}>
                   <TouchableOpacity
-                    key={tv.id}
                     onPress={() => navigation.navigate('DiziDetailsScreen', { tv })}
                   >
                     <Image
@@ -163,7 +162,6 @@ export default function DiziScreen({ navigation }) {
               {tvShows.slice(8, 15).map((tv) => (
                 <View key={tv.id} style={{ alignItems: "center" }}>
                   <TouchableOpacity
-                    key={tv.id}
                     style={{
                       width: 150,
                       height: 225,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator, createMaterialTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, Text, View} from 'react-native';
 import HomePageScreen from '../Screens/HomePageScreen';
 import {  Home, Search, ListChecks, User  } from "lucide-react-native";
@@ -11,8 +11,10 @@ import AccountScreen from '../Screens/AccountScreen';
 
 
 const Tab = createBottomTabNavigator();
+const UpTab = createMaterialTabNavigator();
 
-function MyTabs({navigation}) {
+
+export default function MyTabs({navigation}) {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -52,4 +54,7 @@ function MyTabs({navigation}) {
   );
 }
 
-export default MyTabs;
+
+export default function UpTab({navigation}) {
+  
+}

@@ -102,8 +102,6 @@ export default function FilmScreen({ navigation }) {
             {movies.slice(0, 7).map((movie) => (
               <View key={movie.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
-                  key={movie.id}
-                  
                   onPress={() => navigation.navigate('MovieDetailScreen', { movie})}
                 >
                   <Image
@@ -148,9 +146,9 @@ export default function FilmScreen({ navigation }) {
             showsHorizontalScrollIndicator={false} >
 
             {movies.slice(9,16).map((movie) => (
-              <View >
+              <View key={movie.id} >
                 <TouchableOpacity
-                key={movie.id}
+                
                 style={{
                   width: 150,
                   height: 225,
@@ -211,8 +209,6 @@ export default function FilmScreen({ navigation }) {
             {fawMovies.slice(0,5).map((faw) => (
               <View key={faw.id} style={{ alignItems: "center" }}>
                 <TouchableOpacity
-
-                key={faw.id}
                 style={{
                   width: 150,
                   height: 225,

@@ -81,7 +81,6 @@ export default function CocukScreen({ navigation }) {
            {childrens.slice(2,8).map((children) => (
             <View key={children.id} style={{alignItems:'center'}}>
             <TouchableOpacity
-                                key={children.id}
                                 style={{
                                   width: 150,
                                   height: 225,
