@@ -22,6 +22,7 @@ import TopFilmScreen from '../Screens/TopFilmScreen';
 import TopFilmWeekScreen from '../Screens/TopFilmWeekScreen';
 import TopDiziScreen from '../Screens/TopDiziScreen';
 import TopDiziWeekScreen from '../Screens/TopDiziWeekScreen';
+import CocukDetailScreen from '../Screens/CocukDetailScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -125,6 +126,7 @@ function AppNavigator() {
                 })} />
                 <Stack.Screen name="TopDiziScreen" component={TopDiziScreen}/>
                 <Stack.Screen name="TopDiziWeekScreen" component={TopDiziWeekScreen}/>
+                <Stack.Screen name="CocukDetailScreen" component={CocukDetailScreen}/>
 
         </Stack.Navigator>
     );
