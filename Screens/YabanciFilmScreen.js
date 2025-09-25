@@ -1,4 +1,3 @@
-import React from 'react';
 import { View, ScrollView, Text, TouchableOpacity , Image} from 'react-native';
 import { ChevronRight } from 'lucide-react-native';
 import {useState, useEffect } from 'react';
@@ -53,6 +52,8 @@ export default function YabanciFilmScreen({navigation}) {
             </TouchableOpacity>
           </View>
 
+          {/*1.Poster*/}
+
           <ScrollView
                       horizontal={true}
                       showsHorizontalScrollIndicator={false} >
@@ -69,7 +70,7 @@ export default function YabanciFilmScreen({navigation}) {
                             borderRadius: 15,
                             backgroundColor: '#1f1d17'
                           }}
-                          onPress={() => navigation.navigate('BilimKurguScreen', {movie})}
+                          onPress={() => navigation.navigate('MovieDetailScreen', {movie})}
                         >
                           <Image
                             source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
@@ -99,11 +100,11 @@ export default function YabanciFilmScreen({navigation}) {
           }}
           >
             <TouchableOpacity
-              onPress={() => navigation.navigate('AnimasyonScreen', {movie})}>
+              onPress={() => navigation.navigate('BilimKurguScreen', {movie})}>
               <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Bilim Kurgu-Fantastik</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('AnimasyonScreen', {movie})}
+              onPress={() => navigation.navigate('BilimKurguScreen', {movie})}
               style={{ marginTop: 70, borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4 }} >
               <ChevronRight
                 size={22}
@@ -112,6 +113,8 @@ export default function YabanciFilmScreen({navigation}) {
               />
             </TouchableOpacity>
           </View>
+
+          {/*2.Poster*/}
 
           <ScrollView
                       horizontal={true}
@@ -173,6 +176,8 @@ export default function YabanciFilmScreen({navigation}) {
               />
             </TouchableOpacity>
           </View>
+
+          {/*3.Poster*/}
 
           <ScrollView
                       horizontal={true}

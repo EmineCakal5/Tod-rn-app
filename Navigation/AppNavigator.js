@@ -22,11 +22,11 @@ import TopFilmWeekScreen from '../Screens/TopFilmWeekScreen';
 import TopDiziScreen from '../Screens/TopDiziScreen';
 import TopDiziWeekScreen from '../Screens/TopDiziWeekScreen';
 import CocukDetailScreen from '../Screens/CocukDetailScreen';
-import FilmDetailScreen from '../Screens/FilmDetailScreen';
 import UpTab from './UpTabNavigator';
 import AksiyonScreen from  '../Screens/AksiyonScreen';
 import BilimKurguScreen from  '../Screens/BilimKurguScreen';
 import AnimasyonScreen from  '../Screens/AnimasyonScreen';
+import DiziTab from './DiziTabNavigator';
 
 
 
@@ -72,6 +72,19 @@ function AppNavigator() {
                 component={UpTab}
                 options={({ navigation }) => ({
                     title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
+                <Stack.Screen
+                name="DiziTab"
+                component={DiziTab}
+                options={({ navigation }) => ({
+                    title: 'DİZİ',
                     headerTitleAlign: 'center',
                     headerRight: () => (
                         <TouchableOpacity onPress={() => navigation.navigate('Arama')}

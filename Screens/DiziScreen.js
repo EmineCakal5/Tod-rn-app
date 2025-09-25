@@ -50,7 +50,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Yabancı dizi')}
+              onPress={() => navigation.navigate('DiziTab',{screen: "YabanciDizi"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Yabancı Dizi</Text>
             </TouchableOpacity>
@@ -62,7 +62,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Yerli Dizi')}
+              onPress={() => navigation.navigate('DiziTab', {screen: "YerliDizi"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Yerli Dizi</Text>
             </TouchableOpacity>
@@ -74,7 +74,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Belgesel')}
+              onPress={() => navigation.navigate('DiziTab', {screen: "Belgesel"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Belgesel</Text>
             </TouchableOpacity>
@@ -86,7 +86,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Eğlence')}
+              onPress={() => navigation.navigate('DiziTab', {screen: "EglenceDizi"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Eğlence-Yaşam</Text>
             </TouchableOpacity>
@@ -98,7 +98,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Betimleme')}
+              onPress={() => navigation.navigate('DiziTab', {screen: "BetimlemeDiziScreen"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Betimleme</Text>
             </TouchableOpacity>

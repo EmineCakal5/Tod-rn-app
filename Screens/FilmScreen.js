@@ -71,7 +71,7 @@ export default function FilmScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('UpTab')}
+              onPress={() => navigation.navigate('UpTab', {screen: "YerliFilm"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Yerli Film</Text>
             </TouchableOpacity>
@@ -83,7 +83,7 @@ export default function FilmScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('UpTab')}
+              onPress={() => navigation.navigate('UpTab', {screen: "Betimleme"})}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Betimleme</Text>
             </TouchableOpacity>

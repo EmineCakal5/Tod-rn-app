@@ -53,6 +53,8 @@ export default function YerliFilmScreen({navigation}) {
             </TouchableOpacity>
           </View>
 
+          {/*1.Poster*/}
+          
           <ScrollView
                       horizontal={true}
                       showsHorizontalScrollIndicator={false} >
@@ -69,7 +71,7 @@ export default function YerliFilmScreen({navigation}) {
                             borderRadius: 15,
                             backgroundColor: '#1f1d17'
                           }}
-                          onPress={() => navigation.navigate('BilimKurguScreen', {movie})}
+                          onPress={() => navigation.navigate('MovieDetailScreen', {movie})}
                         >
                           <Image
                             source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
@@ -99,11 +101,11 @@ export default function YerliFilmScreen({navigation}) {
           }}
           >
             <TouchableOpacity
-              onPress={() => navigation.navigate('AnimasyonScreen', {movie})}>
+              onPress={() => navigation.navigate('BilimKurguScreen', {movie})}>
               <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Komedi Seçkisi</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('AnimasyonScreen', {movie})}
+              onPress={() => navigation.navigate('BilimKurguScreen', {movie})}
               style={{ marginTop: 70, borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4 }} >
               <ChevronRight
                 size={22}
@@ -112,6 +114,8 @@ export default function YerliFilmScreen({navigation}) {
               />
             </TouchableOpacity>
           </View>
+
+          {/*2.Poster*/}
 
           <ScrollView
                       horizontal={true}
@@ -178,8 +182,8 @@ export default function YerliFilmScreen({navigation}) {
                       horizontal={true}
                       showsHorizontalScrollIndicator={false} >
           
-                      {movie.slice(0,8).map((movie) => (
-                        <View key={movie.id} >
+                      {childrens.slice(2,8).map((children) => (
+                        <View key={children.id} >
                           <TouchableOpacity
                           
                           style={{
@@ -190,10 +194,10 @@ export default function YerliFilmScreen({navigation}) {
                             borderRadius: 15,
                             backgroundColor: '#1f1d17'
                           }}
-                          onPress={() => navigation.navigate('MovieDetailScreen', {movie})}
+                          onPress={() => navigation.navigate('CocukDetailScreen', {children})}
                         >
                           <Image
-                            source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
+                            source={{ uri: children.image }}
                             style={{ width: '100%', height: 180 }}
                             resizeMode='stretch'
                           />
@@ -206,11 +210,12 @@ export default function YerliFilmScreen({navigation}) {
                             justifyContent: 'center',
                             textAlign: 'center',
           
-                          }}> {movie.title} </Text>
+                          }}> {children.title} </Text>
                         </TouchableOpacity>
                         </View>
                       ))}
                     </ScrollView>
+
 
                     
         </View>
