@@ -44,7 +44,7 @@ export default function SporScreen({ navigation }) {
               borderRadius: 5,
               marginRight: 10,
             }}
-            onPress={() => alert('Haftanın Maçları')}
+            onPress={() => navigation.navigate('SporTab',{screen: "HaftanınMaclari"})}
 
           >
 
@@ -59,7 +59,7 @@ export default function SporScreen({ navigation }) {
               borderRadius: 5,
               marginRight: 10,
             }}
-            onPress={() => alert('Spor Programları')}
+            onPress={() => navigation.navigate('SporTab',{screen: "SporProgramlari"})}
           >
             <Text style={{ color: 'white', fontWeight: 'bold' }}>Spor Programları</Text>
           </TouchableOpacity>
@@ -111,9 +111,9 @@ export default function SporScreen({ navigation }) {
                   <ScrollView
                   horizontal={true}>
               <Image source={require('../Assets/Mac.png')} style={{ width: 300, height: 200, marginLeft:10}} />
-              <Image source={require('../Assets/Mac2.png')} style={{ width:300, height: 206, marginLeft: 10 }} />
-               <Image source={require('../Assets/Mac3.png')} style={{ width:300, height: 206, marginLeft: 10 }} />
-                <Image source={require('../Assets/Mac4.png')} style={{ width:300, height: 209, marginLeft: 10 }} />
+              <Image source={require('../Assets/Mac2.png')} style={{ width:320, height: 206, marginLeft: 10 }} />
+               <Image source={require('../Assets/Mac3.png')} style={{ width:329, height: 200, marginLeft: 10 }} />
+                <Image source={require('../Assets/Mac4.png')} style={{ width:330, height: 203, marginLeft: 10 }} />
                   </ScrollView>
               
              
@@ -212,7 +212,7 @@ export default function SporScreen({ navigation }) {
               'https://mediacms01.digiturkplay.com/sa_bc/PZ0000008105/90dakika-maclar-2024-25_220x286.jpg',
             ].map((url, index) => (
               <View
-                key={index}
+             
                 style={{
                   width: 150,
                   height: 220,

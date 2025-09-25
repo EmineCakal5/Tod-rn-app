@@ -5,21 +5,16 @@ import {useState, useEffect } from 'react';
 export default function BetimlemeScreen({navigation}) {
 
     const [movie, setMovie] = useState([]);
-    const [childrens, setChildrens] = useState([]);
 
     useEffect(() => {
         const fetchMovie = async () => {
             try{
-                const [movieRes, res] = await Promise.all([
+                const movieRes = await 
                     fetch('https://api.themoviedb.org/3/discover/movie?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'
-                ),
-                fetch('https://api.sampleapis.com/cartoons/cartoons2D'),
-            ]);
+                )
                 const movieData = await movieRes.json();
                  setMovie(movieData.results);
 
-                 const data = await res.json();
-                setChildrens(data);
             }
             catch (error) {
             console.error(error);                

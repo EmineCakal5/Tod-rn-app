@@ -27,6 +27,8 @@ import AksiyonScreen from  '../Screens/AksiyonScreen';
 import BilimKurguScreen from  '../Screens/BilimKurguScreen';
 import AnimasyonScreen from  '../Screens/AnimasyonScreen';
 import DiziTab from './DiziTabNavigator';
+import SporTab from './SporTabNavigator';
+
 
 
 
@@ -85,6 +87,19 @@ function AppNavigator() {
                 component={DiziTab}
                 options={({ navigation }) => ({
                     title: 'DİZİ',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
+                   <Stack.Screen
+                name="SporTab"
+                component={SporTab}
+                options={({ navigation }) => ({
+                    title: 'SPOR',
                     headerTitleAlign: 'center',
                     headerRight: () => (
                         <TouchableOpacity onPress={() => navigation.navigate('Arama')}
