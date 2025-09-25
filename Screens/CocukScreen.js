@@ -3,7 +3,6 @@ import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Alert } fr
 import {ChevronRight} from 'lucide-react-native';
 
 export default function CocukScreen({ navigation }) {
-  console.log('ekmek');
 
   const [childrens, setChildrens] = useState([]);
 
@@ -14,7 +13,6 @@ export default function CocukScreen({ navigation }) {
 
         const data = await res.json();
         setChildrens(data);
-        console.log('data', data);
       }
       catch (error) {
         console.error(error);

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search } from 'lucide-react-native';
 import { TouchableOpacity, TextInput } from 'react-native';
 import HomeScreen from '../Screens/HomeScreen';
@@ -23,6 +22,12 @@ import TopFilmWeekScreen from '../Screens/TopFilmWeekScreen';
 import TopDiziScreen from '../Screens/TopDiziScreen';
 import TopDiziWeekScreen from '../Screens/TopDiziWeekScreen';
 import CocukDetailScreen from '../Screens/CocukDetailScreen';
+import FilmDetailScreen from '../Screens/FilmDetailScreen';
+import UpTab from './UpTabNavigator';
+import AksiyonScreen from  '../Screens/AksiyonScreen';
+import BilimKurguScreen from  '../Screens/BilimKurguScreen';
+import AnimasyonScreen from  '../Screens/AnimasyonScreen';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -62,6 +67,19 @@ function AppNavigator() {
                     headerShown: false
 
                 }} />
+            <Stack.Screen
+                name="UpTab"
+                component={UpTab}
+                options={({ navigation }) => ({
+                    title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
             <Stack.Screen name="Package" component={PackageScreen} />
             <Stack.Screen name="HomePage" component={HomePageScreen} />
             <Stack.Screen name="FilmScreen" component={FilmScreen}
@@ -69,41 +87,41 @@ function AppNavigator() {
                     headerShown: false
                 }} />
             <Stack.Screen name="DiziScreen" component={DiziScreen}
-            options={{
-                headerShown: false
-            }} />
+                options={{
+                    headerShown: false
+                }} />
             <Stack.Screen name="SporScreen" component={SporScreen} />
             <Stack.Screen name="CocukScreen" component={CocukScreen} />
             <Stack.Screen name="CanliTVScreen" component={CanliTVScreen} />
             <Stack.Screen name="FormulaScreen" component={FormulaScreen}
-            options={({ navigation }) => ({
-                title: 'Formula 1',
-                headerTitleAlign: 'center',
-                headerRight: () => (
-                    <TouchableOpacity onPress={() => navigation.navigate('Arama')}
-                        style={{ marginRight: 10 }}>
-                        <Search color="white" />
-                    </TouchableOpacity>
-                )
-            })} />
+                options={({ navigation }) => ({
+                    title: 'Formula 1',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
             <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} />
             <Stack.Screen name="DiziDetailsScreen" component={DiziDetailScreen} />
             <Stack.Screen name="EnCokIzlenenlerScreen" component={EnCokIzlenenlerScreen}
-                options={({ navigation}) => ({
+                options={({ navigation }) => ({
                     title: 'En Çok İzlenenler',
                     headerTitleAlign: 'center',
                     headerRight: () => (
                         <TouchableOpacity onPress={() => navigation.navigate('Arama')}
                             style={{ marginRight: 10 }}>
                             <Search color="white" />
-                          
+
                         </TouchableOpacity>
                     )
 
                 })} />
-                <Stack.Screen name="Arama" component={SearchScreen} />
-                <Stack.Screen name="TopFilmScreen" component={TopFilmScreen}
-                options={({ navigation}) => ({
+            <Stack.Screen name="Arama" component={SearchScreen} />
+            <Stack.Screen name="TopFilmScreen" component={TopFilmScreen}
+                options={({ navigation }) => ({
                     title: 'FİLM',
                     headerTitleAlign: 'center',
                     headerRight: () => (
@@ -113,8 +131,8 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                <Stack.Screen name="TopFilmWeekScreen" component={TopFilmWeekScreen}
-                options={({ navigation}) => ({
+            <Stack.Screen name="TopFilmWeekScreen" component={TopFilmWeekScreen}
+                options={({ navigation }) => ({
                     title: 'FİLM',
                     headerTitleAlign: 'center',
                     headerRight: () => (
@@ -124,9 +142,42 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                <Stack.Screen name="TopDiziScreen" component={TopDiziScreen}/>
-                <Stack.Screen name="TopDiziWeekScreen" component={TopDiziWeekScreen}/>
-                <Stack.Screen name="CocukDetailScreen" component={CocukDetailScreen}/>
+            <Stack.Screen name="TopDiziScreen" component={TopDiziScreen} />
+            <Stack.Screen name="TopDiziWeekScreen" component={TopDiziWeekScreen} />
+            <Stack.Screen name="CocukDetailScreen" component={CocukDetailScreen} />
+            <Stack.Screen name="AksiyonScreen" component={AksiyonScreen} 
+             options={({ navigation }) => ({
+                    title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
+                <Stack.Screen name="BilimKurguScreen" component={BilimKurguScreen} 
+             options={({ navigation }) => ({
+                    title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
+                <Stack.Screen name="AnimasyonScreen" component={AnimasyonScreen} 
+             options={({ navigation }) => ({
+                    title: 'FİLM',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
 
         </Stack.Navigator>
     );

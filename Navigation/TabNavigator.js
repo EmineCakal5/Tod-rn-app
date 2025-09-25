@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBottomTabNavigator, createMaterialTabNavigator } from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, Text, View} from 'react-native';
 import HomePageScreen from '../Screens/HomePageScreen';
 import {  Home, Search, ListChecks, User  } from "lucide-react-native";
@@ -11,7 +11,6 @@ import AccountScreen from '../Screens/AccountScreen';
 
 
 const Tab = createBottomTabNavigator();
-const UpTab = createMaterialTabNavigator();
 
 
 export default function MyTabs({navigation}) {
@@ -41,6 +40,7 @@ export default function MyTabs({navigation}) {
       options={{
         title: 'Ana Sayfa',
       }}/>
+      
       <Tab.Screen 
       name="Arama" 
       component={SearchScreen} />
@@ -54,7 +54,3 @@ export default function MyTabs({navigation}) {
   );
 }
 
-
-export default function UpTab({navigation}) {
-  
-}

@@ -57,7 +57,7 @@ export default function FilmScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Yabancı Film')}
+              onPress={() => navigation.navigate('UpTab')}
 
             >
 
@@ -71,7 +71,7 @@ export default function FilmScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Yerli Film')}
+              onPress={() => navigation.navigate('UpTab')}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Yerli Film</Text>
             </TouchableOpacity>
@@ -83,7 +83,7 @@ export default function FilmScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => alert('Animasyon')}
+              onPress={() => navigation.navigate('UpTab')}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Betimleme</Text>
             </TouchableOpacity>
