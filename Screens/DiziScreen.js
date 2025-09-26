@@ -1,8 +1,6 @@
-import React from "react";
 import { useState, useEffect } from 'react';
 import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
-import { ChevronRight} from 'lucide-react-native';
-
+import { ChevronRight } from 'lucide-react-native';
 
 export default function DiziScreen({ navigation }) {
 
@@ -12,11 +10,11 @@ export default function DiziScreen({ navigation }) {
   useEffect(() => {
     const fetchTvShows = async () => {
       try {
-        const [tvRes, fawRes ] = await Promise.all([
-        fetch('https://api.themoviedb.org/3/tv/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'),
-        fetch('https://api.themoviedb.org/3/trending/tv/week?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR')
+        const [tvRes, fawRes] = await Promise.all([
+          fetch('https://api.themoviedb.org/3/tv/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'),
+          fetch('https://api.themoviedb.org/3/trending/tv/week?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR')
         ]);
-     
+
         const tvData = await tvRes.json();
         setTvShows(tvData.results);
 
@@ -50,7 +48,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('DiziTab',{screen: "YabanciDizi"})}
+              onPress={() => navigation.navigate('DiziTab', { screen: "YabanciDizi" })}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Yabancı Dizi</Text>
             </TouchableOpacity>
@@ -62,7 +60,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('DiziTab', {screen: "YerliDizi"})}
+              onPress={() => navigation.navigate('DiziTab', { screen: "YerliDizi" })}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Yerli Dizi</Text>
             </TouchableOpacity>
@@ -74,7 +72,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('DiziTab', {screen: "Belgesel"})}
+              onPress={() => navigation.navigate('DiziTab', { screen: "Belgesel" })}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Belgesel</Text>
             </TouchableOpacity>
@@ -86,7 +84,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('DiziTab', {screen: "EglenceDizi"})}
+              onPress={() => navigation.navigate('DiziTab', { screen: "EglenceDizi" })}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Eğlence-Yaşam</Text>
             </TouchableOpacity>
@@ -98,7 +96,7 @@ export default function DiziScreen({ navigation }) {
                 borderRadius: 5,
                 marginRight: 10,
               }}
-              onPress={() => navigation.navigate('DiziTab', {screen: "BetimlemeDiziScreen"})}
+              onPress={() => navigation.navigate('DiziTab', { screen: "BetimlemeDiziScreen" })}
             >
               <Text style={{ color: 'white', fontWeight: 'bold' }}>Betimleme</Text>
             </TouchableOpacity>
@@ -135,7 +133,7 @@ export default function DiziScreen({ navigation }) {
             <View style={{
               flexDirection: 'row',
               justifyContent: 'space-between',
-              marginTop: -31,
+              marginTop: -53,
 
             }}
             >
@@ -216,38 +214,38 @@ export default function DiziScreen({ navigation }) {
               </TouchableOpacity>
             </View>
 
-              <ScrollView
-                        horizontal={true}
-                        showsHorizontalScrollIndicator={false}
-                      >
-                        {fawTvShows.slice(9,20).map((tv) => (
-                          <TouchableOpacity
-                            key={tv.id}
-                            style={{
-                              width: 150,
-                              height: 220,
-                              marginRight: 10,
-                              borderWidth: 4,
-                              borderRadius: 15,
-                              backgroundColor: '#1f1d17'
-                            }}
-                            onPress={() => navigation.navigate('DiziDetailsScreen', { tv })}
-                          >
-                            <Image
-                              source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
-                              style={{
-                               width: '100%', height: 185
-                              }}
-                            />
-                            <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', alignItems:'center', textAlign:'center', marginTop: 5 }}>
-                              {tv.name}
-                            </Text>
-                           
-                          </TouchableOpacity>
-                       
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+            >
+              {fawTvShows.slice(9, 20).map((tv) => (
+                <TouchableOpacity
+                  key={tv.id}
+                  style={{
+                    width: 150,
+                    height: 220,
+                    marginRight: 10,
+                    borderWidth: 4,
+                    borderRadius: 15,
+                    backgroundColor: '#1f1d17'
+                  }}
+                  onPress={() => navigation.navigate('DiziDetailsScreen', { tv })}
+                >
+                  <Image
+                    source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
+                    style={{
+                      width: '100%', height: 185
+                    }}
+                  />
+                  <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', alignItems: 'center', textAlign: 'center', marginTop: 5 }}>
+                    {tv.name}
+                  </Text>
 
-                        ))}
-                      </ScrollView>
+                </TouchableOpacity>
+
+
+              ))}
+            </ScrollView>
           </View>
         </View>
       </View>

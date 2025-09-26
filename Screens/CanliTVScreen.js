@@ -1,5 +1,4 @@
-import React from 'react';
-import { View, Text, StyleSheet,Alert,ScrollView,TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 
 function CanliTVScreen({ navigation }) {
   return (
@@ -7,7 +6,7 @@ function CanliTVScreen({ navigation }) {
       <Text style={{ fontSize: 24, fontWeight: 'bold', color: 'white', marginTop: -4 }}>CANLI TV</Text>
       <ScrollView
         horizontal={true}
-        >
+      >
         <View>
           <TouchableOpacity
             style={{

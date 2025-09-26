@@ -25,7 +25,7 @@ export default function DiziTab({ navigation }) {
                     fontSize: 15,
                     fontWeight: 'bold',
                     textAlign: 'center',
-                      // Yazılar alta kaymasın
+                    // Yazılar alta kaymasın
                 },
                 // Aktif tab altındaki gösterge çizgisi
                 tabBarIndicatorStyle: {

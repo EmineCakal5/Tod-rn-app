@@ -1,15 +1,15 @@
-import { createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import HaftaninMaclariScreen from '../Screens/HaftaninMaclariScreen';
 import SporProgramlariScreen from '../Screens/SporProgramlariScreen';
 
 const Tab = createMaterialTopTabNavigator();
 
-export default function SporTab({ navigation}) {
+export default function SporTab({ navigation }) {
 
     return (
 
         <Tab.Navigator
-          screenOptions={{
+            screenOptions={{
                 // Tab bar genel stilleri
                 tabBarStyle: {
                     backgroundColor: 'black',
@@ -44,19 +44,19 @@ export default function SporTab({ navigation}) {
             }}
         >
             <Tab.Screen
-            name = "HaftaninMaclari"
-            component = {HaftaninMaclariScreen}
-            options={{
-                title: "Haftanın Maçları"
-            }}/>
+                name="HaftaninMaclari"
+                component={HaftaninMaclariScreen}
+                options={{
+                    title: "Haftanın Maçları"
+                }} />
 
             <Tab.Screen
-            name = "SporProgramlari"
-            component = {SporProgramlariScreen}
-            options={{
-                title: "Spor Programları"
-            }}/>
-            
+                name="SporProgramlari"
+                component={SporProgramlariScreen}
+                options={{
+                    title: "Spor Programları"
+                }} />
+
         </Tab.Navigator>
     )
 }

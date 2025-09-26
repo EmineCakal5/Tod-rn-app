@@ -1,16 +1,16 @@
-import { createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import YabanciFilmScreen from '../Screens/YabanciFilmScreen';
 import YerliFilmScreen from '../Screens/YerliFilmScreen';
 import BetimlemeScreen from '../Screens/BetimlemeScreen';
 
 const Tab = createMaterialTopTabNavigator();
 
-export default function UpTab({ navigation}) {
+export default function UpTab({ navigation }) {
 
     return (
 
         <Tab.Navigator
-          screenOptions={{
+            screenOptions={{
                 // Tab bar genel stilleri
                 tabBarStyle: {
                     backgroundColor: 'black',
@@ -45,21 +45,21 @@ export default function UpTab({ navigation}) {
             }}
         >
             <Tab.Screen
-            name = "YabanciFilm"
-            component = {YabanciFilmScreen}
-            options={{
-                title: "Yabancı Film"
-            }}/>
+                name="YabanciFilm"
+                component={YabanciFilmScreen}
+                options={{
+                    title: "Yabancı Film"
+                }} />
 
             <Tab.Screen
-            name = "YerliFilm"
-            component = {YerliFilmScreen}
-            options={{
-                title: "Yerli Film"
-            }}/>
+                name="YerliFilm"
+                component={YerliFilmScreen}
+                options={{
+                    title: "Yerli Film"
+                }} />
             <Tab.Screen
-            name = "Betimleme"
-            component = {BetimlemeScreen}
+                name="Betimleme"
+                component={BetimlemeScreen}
             />
         </Tab.Navigator>
     )

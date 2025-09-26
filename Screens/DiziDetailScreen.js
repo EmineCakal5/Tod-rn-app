@@ -1,5 +1,4 @@
-import { Text, View, ScrollView, Image, TouchableOpacity, Alert } from 'react-native';
-
+import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 
 const genreMap = {
     10759: "Action & Adventure",

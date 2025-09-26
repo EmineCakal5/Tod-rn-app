@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { ChevronRight} from 'lucide-react-native';
 
-
 export default function YabanciDiziScreen({ navigation }) {
 
   const [tvShows, setTvShows] = useState([]);

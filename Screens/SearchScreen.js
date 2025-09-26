@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import {View, Text, StyleSheet, TextInput} from 'react-native';
+import {useState} from 'react';
+import {View, Text, TextInput} from 'react-native';
 
 function SearchScreen({navigation}) {
-     const [text, setText] = React.useState('');
+     const [text, setText] = useState([]);
   return (
     <View style={{flex: 1, alignItems: 'center', backgroundColor:'black' }}>
       <Text >Search Screen</Text>

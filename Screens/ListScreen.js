@@ -1,10 +1,11 @@
-import React from 'react';
-import {View, Text, StyleSheet,} from 'react-native';
+import {View, Text} from 'react-native';
 
 function ListScreen({navigation}) {
   return (
     <View style={{flex: 1, alignItems: 'center', backgroundColor:'black' }}>
-      <Text style={{fontSize: 24, color:'white', fontWeight:'bold', marginTop: -4}}>Listelerim</Text>
+      <Text style={{fontSize: 24, color:'white', fontWeight:'bold', marginTop: 6}}>Listelerim</Text>
+
+
     </View>
   );
 }

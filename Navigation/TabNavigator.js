@@ -1,8 +1,6 @@
-import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, Text, View} from 'react-native';
 import HomePageScreen from '../Screens/HomePageScreen';
-import {  Home, Search, ListChecks, User  } from "lucide-react-native";
+import { Home, Search, ListChecks, User } from "lucide-react-native";
 import SearchScreen from '../Screens/SearchScreen';
 import ListScreen from '../Screens/ListScreen';
 import AccountScreen from '../Screens/AccountScreen';
@@ -13,43 +11,45 @@ import AccountScreen from '../Screens/AccountScreen';
 const Tab = createBottomTabNavigator();
 
 
-export default function MyTabs({navigation}) {
+export default function MyTabs({ navigation }) {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
         headerShown: false,
-        tabBarStyle: { backgroundColor: 'black',
+        tabBarStyle: {
+          backgroundColor: 'black',
           borderTopWidth: 0,
-         },
+        },
         tabBarActiveTintColor: 'white',
-      tabBarIcon : ({ color, size }) => {
-        if (route.name === 'HomePage') {
-          return <Home size={size} color={color} />;
-        }else if (route.name === 'Arama') {
-          return <Search size={size} color={color} />;
-        } else if (route.name === 'Listelerim') {
-          return <ListChecks size={size} color={color} />;
-        } else if (route.name === 'Hesabım') {
-          return <User size={size} color={color}/>;
-       } },  
-       })}
-      >
-      <Tab.Screen 
-      name="HomePage" 
-      component={HomePageScreen}
-      options={{
-        title: 'Ana Sayfa',
-      }}/>
-      
-      <Tab.Screen 
-      name="Arama" 
-      component={SearchScreen} />
-      <Tab.Screen 
-      name="Listelerim" 
-      component={ListScreen} />
-      <Tab.Screen 
-      name="Hesabım" 
-      component={AccountScreen} />
+        tabBarIcon: ({ color, size }) => {
+          if (route.name === 'HomePage') {
+            return <Home size={size} color={color} />;
+          } else if (route.name === 'Arama') {
+            return <Search size={size} color={color} />;
+          } else if (route.name === 'Listelerim') {
+            return <ListChecks size={size} color={color} />;
+          } else if (route.name === 'Hesabım') {
+            return <User size={size} color={color} />;
+          }
+        },
+      })}
+    >
+      <Tab.Screen
+        name="HomePage"
+        component={HomePageScreen}
+        options={{
+          title: 'Ana Sayfa',
+        }} />
+
+      <Tab.Screen
+        name="Arama"
+        component={SearchScreen} />
+      <Tab.Screen
+        name="Listelerim"
+        component={ListScreen} />
+      <Tab.Screen
+        name="Hesabım"
+        component={AccountScreen} />
     </Tab.Navigator>
   );
 }

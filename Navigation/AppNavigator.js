@@ -23,9 +23,9 @@ import TopDiziScreen from '../Screens/TopDiziScreen';
 import TopDiziWeekScreen from '../Screens/TopDiziWeekScreen';
 import CocukDetailScreen from '../Screens/CocukDetailScreen';
 import UpTab from './UpTabNavigator';
-import AksiyonScreen from  '../Screens/AksiyonScreen';
-import BilimKurguScreen from  '../Screens/BilimKurguScreen';
-import AnimasyonScreen from  '../Screens/AnimasyonScreen';
+import AksiyonScreen from '../Screens/AksiyonScreen';
+import BilimKurguScreen from '../Screens/BilimKurguScreen';
+import AnimasyonScreen from '../Screens/AnimasyonScreen';
 import DiziTab from './DiziTabNavigator';
 import SporTab from './SporTabNavigator';
 import VideoPlayerScreen from '../Screens/VideoPlayerScreen';
@@ -50,19 +50,19 @@ function AppNavigator() {
                 name="Home"
                 component={HomeScreen}
                 options={{
-                    title: 'HomeScreen',
+                    title: ' ',
                 }} />
             <Stack.Screen
                 name="Details"
                 component={DetailsScreen}
                 options={{
-                    title: 'Details',
+                    title: ' ',
                 }} />
             <Stack.Screen
                 name="Password"
                 component={PasswordScreen}
                 options={{
-                    title: 'password',
+                    title: ' ',
                 }} />
             <Stack.Screen
                 name="MyTabs"
@@ -85,7 +85,7 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                <Stack.Screen
+            <Stack.Screen
                 name="DiziTab"
                 component={DiziTab}
                 options={({ navigation }) => ({
@@ -98,7 +98,7 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                   <Stack.Screen
+            <Stack.Screen
                 name="SporTab"
                 component={SporTab}
                 options={({ navigation }) => ({
@@ -121,8 +121,21 @@ function AppNavigator() {
                 options={{
                     headerShown: false
                 }} />
-            <Stack.Screen name="SporScreen" component={SporScreen} />
-            <Stack.Screen name="CocukScreen" component={CocukScreen} />
+            <Stack.Screen name="SporScreen" component={SporScreen}
+                options={{
+                    headerShown: false
+                }} />
+            <Stack.Screen name="CocukScreen" component={CocukScreen}
+                options={({ navigation }) => ({
+                    title: 'ÇOCUK',
+                    headerTitleAlign: 'center',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Arama')}
+                            style={{ marginRight: 10 }}>
+                            <Search color="white" />
+                        </TouchableOpacity>
+                    )
+                })} />
             <Stack.Screen name="CanliTVScreen" component={CanliTVScreen} />
             <Stack.Screen name="FormulaScreen" component={FormulaScreen}
                 options={({ navigation }) => ({
@@ -135,8 +148,14 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-            <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} />
-            <Stack.Screen name="DiziDetailsScreen" component={DiziDetailScreen} />
+            <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen}
+                options={{
+                    headerShown: false
+                }} />
+            <Stack.Screen name="DiziDetailsScreen" component={DiziDetailScreen}
+                options={{
+                    headerShown: false
+                }} />
             <Stack.Screen name="EnCokIzlenenlerScreen" component={EnCokIzlenenlerScreen}
                 options={({ navigation }) => ({
                     title: 'En Çok İzlenenler',
@@ -176,11 +195,11 @@ function AppNavigator() {
             <Stack.Screen name="TopDiziScreen" component={TopDiziScreen} />
             <Stack.Screen name="TopDiziWeekScreen" component={TopDiziWeekScreen} />
             <Stack.Screen name="CocukDetailScreen" component={CocukDetailScreen}
-            options={{
-                title:' ',
-            }} />
-            <Stack.Screen name="AksiyonScreen" component={AksiyonScreen} 
-             options={({ navigation }) => ({
+                options={{
+                    headerShown: false
+                }} />
+            <Stack.Screen name="AksiyonScreen" component={AksiyonScreen}
+                options={({ navigation }) => ({
                     title: 'FİLM',
                     headerTitleAlign: 'center',
                     headerRight: () => (
@@ -190,8 +209,8 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                <Stack.Screen name="BilimKurguScreen" component={BilimKurguScreen} 
-             options={({ navigation }) => ({
+            <Stack.Screen name="BilimKurguScreen" component={BilimKurguScreen}
+                options={({ navigation }) => ({
                     title: 'FİLM',
                     headerTitleAlign: 'center',
                     headerRight: () => (
@@ -201,8 +220,8 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                <Stack.Screen name="AnimasyonScreen" component={AnimasyonScreen} 
-             options={({ navigation }) => ({
+            <Stack.Screen name="AnimasyonScreen" component={AnimasyonScreen}
+                options={({ navigation }) => ({
                     title: 'FİLM',
                     headerTitleAlign: 'center',
                     headerRight: () => (
@@ -212,18 +231,18 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
-                <Stack.Screen name="VideoPlayerScreen" component={VideoPlayerScreen}
+            <Stack.Screen name="VideoPlayerScreen" component={VideoPlayerScreen}
                 options={{
                     title: ' ',
-                }}/>
-                <Stack.Screen name="Video2PlayerScreen" component={Video2PlayerScreen}
+                }} />
+            <Stack.Screen name="Video2PlayerScreen" component={Video2PlayerScreen}
                 options={{
                     title: ' ',
-                }}/>
-                 <Stack.Screen name="Video3PlayerScreen" component={Video3PlayerScreen}
+                }} />
+            <Stack.Screen name="Video3PlayerScreen" component={Video3PlayerScreen}
                 options={{
                     title: ' ',
-                }}/>
+                }} />
 
         </Stack.Navigator>
     );

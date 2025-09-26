@@ -1,10 +1,9 @@
-import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import { useState, useEffect } from 'react';
 import { Text, View, ScrollView, Image, StyleSheet } from 'react-native';
 import { ChevronRight, Tv } from 'lucide-react-native';
 
-const Categories = ['Özetler','Yarışlar','Antrenman ','Sıralama ','Finishline'];
+const Categories = ['Özetler', 'Yarışlar', 'Antrenman ', 'Sıralama ', 'Finishline'];
 function HomePageScreen({ navigation }) {
 
   const [movies, setMovies] = useState([]);
@@ -16,8 +15,8 @@ function HomePageScreen({ navigation }) {
       try {
         const [moviesRes, tvRes] = await Promise.all([
           fetch(
-          'https://api.themoviedb.org/3/movie/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'),
-          fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR') 
+            'https://api.themoviedb.org/3/movie/popular?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR'),
+          fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=ec55e243a5f3dc4d8ba5a4bedbfb52bd&language=tr-TR')
         ]);
         const moviesData = await moviesRes.json();
         setMovies(moviesData.results);
@@ -164,8 +163,8 @@ function HomePageScreen({ navigation }) {
           >
             <TouchableOpacity
               onPress={() => navigation.navigate('FormulaScreen')}>
-            <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Formula 1</Text>
-              </TouchableOpacity>
+              <Text style={{ color: 'white', fontWeight: 'bold', marginTop: 70, fontSize: 16 }}>Formula 1</Text>
+            </TouchableOpacity>
             <TouchableOpacity
               onPress={() => navigation.navigate('FormulaScreen')}
               style={{ marginTop: 70, borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4 }} >
@@ -207,46 +206,46 @@ function HomePageScreen({ navigation }) {
                   style={{ width: '100%', height: 185 }}
                   resizeMode='cover'
                 />
-                <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', textAlign: 'center', marginTop: 5 ,alignItems:'center'}}>
+                <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', textAlign: 'center', marginTop: 5, alignItems: 'center' }}>
                   Formula 1 {Categories[index]}
                 </Text>
-              </View> 
+              </View>
             ))}
           </ScrollView>
-        {/*</View>*/}
+          {/*</View>*/}
 
 
-        <View style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginTop:13
-          
-        }}
-        >
-          <TouchableOpacity
-            onPress={() => navigation.navigate('EnCokIzlenenlerScreen', {tvShows})}>
-          <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 16 }}>En Çok İzlenenler </Text>
+          <View style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: 13
+
+          }}
+          >
+            <TouchableOpacity
+              onPress={() => navigation.navigate('EnCokIzlenenlerScreen', { tvShows })}>
+              <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 16 }}>En Çok İzlenenler </Text>
             </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('EnCokIzlenenlerScreen', {tvShows})}
-            style={{  borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4, marginLeft:209 }} >
-            <ChevronRight
-              size={22}
-              color="gray"
-              fontWeight='bold'
-            />
-          </TouchableOpacity>
-        </View>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('EnCokIzlenenlerScreen', { tvShows })}
+              style={{ borderWidth: 1, backgroundColor: '#1f1d17', borderRadius: 17, padding: 4, marginLeft: 209 }} >
+              <ChevronRight
+                size={22}
+                color="gray"
+                fontWeight='bold'
+              />
+            </TouchableOpacity>
+          </View>
 
 
-        {/*3. Poster kısmı*/}
-        {/*<View>*/}
+          {/*3. Poster kısmı*/}
+          {/*<View>*/}
           <ScrollView
             horizontal={true}
             showsHorizontalScrollIndicator={false}
           >
-            {tvShows.slice(9,20).map((tv) => (
+            {tvShows.slice(9, 20).map((tv) => (
               <TouchableOpacity
                 key={tv.id}
                 style={{
@@ -262,18 +261,18 @@ function HomePageScreen({ navigation }) {
                 <Image
                   source={{ uri: `https://image.tmdb.org/t/p/w500${tv.poster_path}` }}
                   style={{
-                   width: '100%', height: 185
+                    width: '100%', height: 185
                   }}
                 />
-                <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', alignItems:'center', textAlign:'center', marginTop: 5 }}>
+                <Text style={{ color: 'white', fontSize: 12, alignItems: 'center', alignItems: 'center', textAlign: 'center', marginTop: 5 }}>
                   {tv.name}
                 </Text>
-               
+
               </TouchableOpacity>
             ))}
           </ScrollView>
         </View>
-        
+
       </View>
     </ScrollView>
   );
