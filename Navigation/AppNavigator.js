@@ -28,6 +28,9 @@ import BilimKurguScreen from  '../Screens/BilimKurguScreen';
 import AnimasyonScreen from  '../Screens/AnimasyonScreen';
 import DiziTab from './DiziTabNavigator';
 import SporTab from './SporTabNavigator';
+import VideoPlayerScreen from '../Screens/VideoPlayerScreen';
+import Video2PlayerScreen from '../Screens/Video2PlayerScreen';
+import Video3PlayerScreen from '../Screens/Video3PlayerScreen';
 
 
 
@@ -172,7 +175,10 @@ function AppNavigator() {
                 })} />
             <Stack.Screen name="TopDiziScreen" component={TopDiziScreen} />
             <Stack.Screen name="TopDiziWeekScreen" component={TopDiziWeekScreen} />
-            <Stack.Screen name="CocukDetailScreen" component={CocukDetailScreen} />
+            <Stack.Screen name="CocukDetailScreen" component={CocukDetailScreen}
+            options={{
+                title:' ',
+            }} />
             <Stack.Screen name="AksiyonScreen" component={AksiyonScreen} 
              options={({ navigation }) => ({
                     title: 'FİLM',
@@ -206,6 +212,18 @@ function AppNavigator() {
                         </TouchableOpacity>
                     )
                 })} />
+                <Stack.Screen name="VideoPlayerScreen" component={VideoPlayerScreen}
+                options={{
+                    title: ' ',
+                }}/>
+                <Stack.Screen name="Video2PlayerScreen" component={Video2PlayerScreen}
+                options={{
+                    title: ' ',
+                }}/>
+                 <Stack.Screen name="Video3PlayerScreen" component={Video3PlayerScreen}
+                options={{
+                    title: ' ',
+                }}/>
 
         </Stack.Navigator>
     );

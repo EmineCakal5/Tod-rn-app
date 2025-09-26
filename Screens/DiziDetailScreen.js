@@ -1,5 +1,4 @@
-import React from 'react';
-import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, Image, TouchableOpacity, Alert } from 'react-native';
 
 
 const genreMap = {
@@ -21,7 +20,7 @@ const genreMap = {
     37: "Western"
 };
 
-export default function DiziDetailScreen({ route }) {
+export default function DiziDetailScreen({ route, navigation }) {
 
     const { tv } = route.params;
     return (
@@ -51,7 +50,7 @@ export default function DiziDetailScreen({ route }) {
                         justifyContent: 'center',
                         width: 378
                     }}
-                    onPress={() => Alert.alert('Play button pressed')}
+                    onPress={() => navigation.navigate('Video2PlayerScreen')}
                 >
                     <Text style={{ color: 'white', fontWeight: 'bold', marginLeft: 5 }}>İzlemeye Başla</Text>
                 </TouchableOpacity>

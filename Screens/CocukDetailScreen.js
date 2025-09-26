@@ -1,5 +1,5 @@
 
-import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import { Text, View, ScrollView, Image, TouchableOpacity, Alert } from 'react-native';
 
 
 
@@ -35,7 +35,7 @@ export default function CocukDetailScreen({route, navigation}) {
                                             justifyContent: 'center',
                                             width: 378
                                         }}
-                                        onPress={() => Alert.alert('Play button pressed')}
+                                        onPress={() => navigation.navigate('Video3PlayerScreen')}
                                     >
                                         <Text style={{ color: 'white', fontWeight: 'bold', marginLeft: 5 }}>İzle</Text>
                                     </TouchableOpacity>

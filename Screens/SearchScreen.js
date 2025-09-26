@@ -11,8 +11,8 @@ function SearchScreen({navigation}) {
           width: '100%',
           height: 50,
           borderBottomColor: 'gray',
-          paddingHorizontal: 5,
-          marginTop: 3,
+          paddingHorizontal: 8,
+          marginTop: 8,
           textAlign:'left',
           fontSize: 20,
         }}

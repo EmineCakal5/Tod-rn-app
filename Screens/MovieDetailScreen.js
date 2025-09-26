@@ -52,7 +52,7 @@ export default function MovieDetailScreen({ route, navigation }) {
                             justifyContent: 'center',
                             width: 378
                         }}
-                        onPress={() => Alert.alert('Play button pressed')}
+                        onPress={() => navigation.navigate('VideoPlayerScreen')}
                     >
                         <Text style={{ color: 'white', fontWeight: 'bold', marginLeft: 5 }}>İzle</Text>
                     </TouchableOpacity>
